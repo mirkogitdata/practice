@@ -83,8 +83,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: var(--urbanist-text);
-  text-align: center;
+  font-family: 'Urbanist', sans-serif;
   overflow-x: hidden;
 }
 
@@ -102,5 +101,10 @@ a:hover {
 
 a:active {
   background: none;
+}
+
+h2#logo {
+  color: red;
+  font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */
