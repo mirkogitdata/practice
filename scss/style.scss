@@ -1,0 +1,33 @@
+@import './partials/typography.scss';
+@import './partials/variables.scss';
+@import './partials/buttons.scss';
+@import './partials/media-queries.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //color: var(--color-black);
+  font-family: var(--urbanist-text);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+a {
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover {
+    color: white;
+  }
+  &:active {
+    background: none;
+  }
+}
