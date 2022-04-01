@@ -14,23 +14,23 @@
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3.5em;
 }
 
 h2 {
-  font-size: 2.6em;
+  font-size: 3.1em;
 }
 
 h3 {
-  font-size: 2.2em;
+  font-size: 2.6em;
 }
 
 h4 {
-  font-size: 1.6em;
+  font-size: 2.1em;
 }
 
 h5 {
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 /* Default: 
@@ -108,6 +108,7 @@ a:active {
 
 header {
   width: 100%;
+  margin: 2rem 0rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -166,7 +167,7 @@ header nav.nav .nav-list .nav-items a:after {
   left: 32px;
   width: 0;
   height: 2px;
-  background-color: var(--violet);
+  background-color: var(--violet-dark);
   transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -webkit-transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -moz-transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -184,7 +185,7 @@ header nav.nav .nav-list .nav-items a.last-link {
 
 header div.line span {
   display: block;
-  background-color: #b3b3b3;
+  background-color: #d9d9d9;
   width: 2px;
   height: 40px;
   margin: 0 1.5rem;
@@ -201,7 +202,7 @@ header div.login {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: var(--white);
-  padding: 0.25rem;
+  padding: 0.3rem;
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -238,7 +239,7 @@ header div.login p {
 }
 
 header div.dropdown {
-  overflow: hidden;
+  background-color: none;
 }
 
 header div.dropdown button.state {
@@ -248,7 +249,7 @@ header div.dropdown button.state {
 header div.dropdown div.dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: var(--violet-dark);
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   margin: 1rem 0 0 0.4rem;
@@ -257,7 +258,7 @@ header div.dropdown div.dropdown-content {
 }
 
 header div.dropdown div.dropdown-content a {
-  color: black;
+  color: var(--white);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -276,5 +277,146 @@ header div.dropdown:hover .dropdown-content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+section#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../src/hero.png") center/cover;
+  background-repeat: no-repeat;
+}
+
+section#hero div.gradient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(231, 123, 30, 0.2)), to(rgba(231, 123, 30, 0.7)));
+  background-image: linear-gradient(rgba(231, 123, 30, 0.2), rgba(231, 123, 30, 0.7));
+  width: 100%;
+  height: 100vh;
+  color: var(--white);
+}
+
+section#hero div.gradient h1 {
+  margin-top: -4rem;
+  margin-bottom: 0;
+}
+
+section#hero div.gradient p {
+  margin-bottom: 3rem;
+}
+
+section#hero div.gradient div.searchBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50%;
+  padding: 0.3rem 0.3rem 0.3rem 1.2rem;
+  background-color: var(--white);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  height: 60px;
+}
+
+section#hero div.gradient div.searchBox .searchTopic, section#hero div.gradient div.searchBox .searchProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#hero div.gradient div.searchBox .searchTopic .fa-solid, section#hero div.gradient div.searchBox .searchProject .fa-solid {
+  color: black;
+}
+
+section#hero div.gradient div.searchBox .searchTopic .mySearch, section#hero div.gradient div.searchBox .searchProject .mySearch {
+  border: none;
+  margin-left: 1rem;
+}
+
+section#hero div.gradient div.searchBox .searchTopic .mySearch:focus, section#hero div.gradient div.searchBox .searchProject .mySearch:focus {
+  background-color: var(--violet-dark);
+  color: var(--white);
+  padding: 0.5rem;
+}
+
+section#hero div.gradient div.searchBox div.line span {
+  display: block;
+  background-color: #d9d9d9;
+  width: 2px;
+  height: 40px;
+  margin: 0 1.5rem;
+  height: 25px;
+}
+
+section#hero div.gradient div.searchBox button.btn-violet {
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  background-color: var(--violet-dark);
+  color: var(--white);
+  border: none;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all ease-in 0.4s;
+  height: 50px;
+  width: 190px;
+}
+
+section#hero div.gradient div.searchBox button.btn-violet:hover {
+  background-color: var(--violet);
+}
+
+section#hero div.gradient img.hero-left {
+  width: 290px;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+section#hero div.gradient img.hero-rigth {
+  width: 290px;
+  position: absolute;
+  top: 110px;
+  right: 50px;
 }
 /*# sourceMappingURL=style.css.map */

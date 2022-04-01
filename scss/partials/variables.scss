@@ -1,0 +1,59 @@
+@mixin hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../src/hero.png")  center/cover;
+  background-repeat: no-repeat;
+}
+
+@mixin searchBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 0.3rem 0.3rem 0.3rem 1.2rem;
+  background-color: var(--white);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  .searchTopic, .searchProject {
+    .fa-solid {
+      color: black;
+    }
+    .mySearch {
+      border: none;
+      margin-left: 1rem;
+      &:focus {
+        background-color: var(--violet-dark);
+        color: var(--white);
+        padding: 0.5rem;
+      }
+    }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  div.line {
+    span {
+       @include vertical-line;
+       height: 25px;
+     
+    }
+  }
+  button.btn-violet {
+    @include button;
+    height: 50px;
+    width: 190px;
+  }
+}
+
+@mixin vertical-line {
+  display: block;
+  background-color: darken(#fff, 15%);
+   width:2px;
+   height: 40px;
+   margin: 0 1.5rem;
+}
