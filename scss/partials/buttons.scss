@@ -1,0 +1,22 @@
+@mixin button {
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  background-color: var(--violet-dark);
+  color: var(--white);
+  border: none;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all ease-in 0.4s;
+  &:hover {
+    background-color: var(--violet);
+  }
+}
