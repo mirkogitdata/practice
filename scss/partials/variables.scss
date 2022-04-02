@@ -89,7 +89,13 @@
     background: url("../src/pedro-miranda2.jpg")  center/cover;
     background-repeat: no-repeat;
 }
-
+@mixin perdoMiranda1 {
+  width: 1300px;
+  height: 568px;
+  background: url("../src/pedro-miranda1.jpg")  center/cover;
+  background-repeat: no-repeat;
+  z-index: 2000;
+}
 @mixin jonneMakikyro {
   width: 1300px;
   height: 568px;
