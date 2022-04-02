@@ -1,6 +1,6 @@
 @mixin hero {
   width: 100%;
-  height: 100vh;
+  height: 820px;
   background: url("../src/hero.png")  center/cover;
   background-repeat: no-repeat;
 }
@@ -57,3 +57,4 @@
    height: 40px;
    margin: 0 1.5rem;
 }
+
