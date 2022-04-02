@@ -56,7 +56,7 @@ p {
 .container {
   width: 1300px;
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 80px 0;
 }
 
 .cf::after {
@@ -494,6 +494,10 @@ section#topics div.container div.quickLinks div.links div.circle3 {
   background-color: var(--violet-dark);
 }
 
+section#topics div.container div.quickLinks div.links div.circle3 img {
+  width: 49px;
+}
+
 section#topics div.container div.quickLinks div.links div.circle4 {
   background-color: var(--blue-light);
 }
@@ -504,6 +508,11 @@ section#topics div.container div.quickLinks div.links div.circle5 {
 
 section#topics div.container div.quickLinks div.links div.circle6 {
   background-color: var(--pink);
+  margin-left: 1rem;
+}
+
+section#topics div.container div.quickLinks div.links div.circle6 img {
+  width: 38px;
 }
 
 section#topics div.container div.quickLinks div.links div.circle7 {
@@ -512,6 +521,10 @@ section#topics div.container div.quickLinks div.links div.circle7 {
 
 section#topics div.container div.quickLinks div.links div.circle8 {
   background-color: var(--violet);
+}
+
+section#topics div.container div.quickLinks div.links div.circle8 img {
+  width: 38px;
 }
 
 section#topics div.container div.quickLinks div.links div.text {
@@ -644,6 +657,10 @@ section#topics div.container:nth-of-type(2) div.topPics div.pics article .layerC
   background-color: var(--pink);
 }
 
+section#topics div.container:nth-of-type(2) div.topPics div.pics article .layerColor2 img {
+  width: 12px;
+}
+
 section#topics div.container:nth-of-type(2) div.topPics div.pics article .layerColor3 {
   background-color: var(--blue-dark);
 }
@@ -717,6 +734,11 @@ section#initiatives .container .imageContent article {
 
 section#initiatives .container .imageContent article img {
   width: 400px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 section#initiatives .container .imageContent article h3 {
@@ -730,20 +752,26 @@ section#initiatives .container .imageContent article a:link, section#initiatives
   font-weight: 600;
 }
 
+section#sponsored {
+  padding: 80px 0rem;
+}
+
 section#sponsored div.pedroMiranda {
   width: 1300px;
   height: 568px;
-  background: url("../src/pedro-miranda1.jpg") center/cover;
+  background: url("../src/pedro-miranda1.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
   background-repeat: no-repeat;
-  z-index: 2000;
+  position: relative;
 }
 
 section#sponsored div.pedroMiranda .alfaCover {
   width: 1300px;
   height: 568px;
-  background-image: -webkit-gradient(linear, right top, left top, from(var(--blue-light)), to(var(--blue)));
-  background-image: linear-gradient(270deg, var(--blue-light), var(--blue));
-  opacity: 0.66;
+  background-image: -webkit-gradient(linear, left top, right top, from(#56bdfd), to(rgba(86, 189, 253, 0.3)));
+  background-image: linear-gradient(90deg, #56bdfd, rgba(86, 189, 253, 0.3));
+  z-index: 2000;
 }
 
 section#sponsored div.pedroMiranda .alfaCover .headingh2 {
@@ -890,6 +918,10 @@ section#testimonials .container div.topPics div.pics article .layerColor1 {
 
 section#testimonials .container div.topPics div.pics article .layerColor2 {
   background-color: var(--pink);
+}
+
+section#testimonials .container div.topPics div.pics article .layerColor2 img {
+  width: 12px;
 }
 
 section#testimonials .container div.topPics div.pics article .layerColor3 {
