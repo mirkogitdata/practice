@@ -49,6 +49,10 @@ h5 {
   margin: 0.5rem 0;
 }
 
+p {
+  line-height: 1.5rem;
+}
+
 .container {
   width: 1300px;
   margin: 0 auto;
@@ -422,7 +426,7 @@ section#hero div.gradient img.hero-rigth {
   right: 50px;
 }
 
-section#about div.container .headingh2 {
+section#topics div.container .headingh2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,15 +436,15 @@ section#about div.container .headingh2 {
   margin-bottom: 3rem;
 }
 
-section#about div.container .headingh2 img {
+section#topics div.container .headingh2 img {
   width: 29px;
 }
 
-section#about div.container .headingh2 h2 {
+section#topics div.container .headingh2 h2 {
   margin-left: 1rem;
 }
 
-section#about div.container div.quickLinks {
+section#topics div.container div.quickLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,7 +461,7 @@ section#about div.container div.quickLinks {
   margin-bottom: 3rem;
 }
 
-section#about div.container div.quickLinks div.links {
+section#topics div.container div.quickLinks div.links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,7 +475,7 @@ section#about div.container div.quickLinks div.links {
       flex-basis: 25%;
 }
 
-section#about div.container div.quickLinks div.links div.circle {
+section#topics div.container div.quickLinks div.links div.circle {
   width: 40px;
   background-color: var(--blue);
   padding: 15px;
@@ -482,85 +486,85 @@ section#about div.container div.quickLinks div.links div.circle {
   -o-border-radius: 40px;
 }
 
-section#about div.container div.quickLinks div.links div.circle2 {
+section#topics div.container div.quickLinks div.links div.circle2 {
   background-color: var(--orange-light);
 }
 
-section#about div.container div.quickLinks div.links div.circle3 {
+section#topics div.container div.quickLinks div.links div.circle3 {
   background-color: var(--violet-dark);
 }
 
-section#about div.container div.quickLinks div.links div.circle4 {
+section#topics div.container div.quickLinks div.links div.circle4 {
   background-color: var(--blue-light);
 }
 
-section#about div.container div.quickLinks div.links div.circle5 {
+section#topics div.container div.quickLinks div.links div.circle5 {
   background-color: var(--orange);
 }
 
-section#about div.container div.quickLinks div.links div.circle6 {
+section#topics div.container div.quickLinks div.links div.circle6 {
   background-color: var(--pink);
 }
 
-section#about div.container div.quickLinks div.links div.circle7 {
+section#topics div.container div.quickLinks div.links div.circle7 {
   background-color: var(--blue-dark);
 }
 
-section#about div.container div.quickLinks div.links div.circle8 {
+section#topics div.container div.quickLinks div.links div.circle8 {
   background-color: var(--violet);
 }
 
-section#about div.container div.quickLinks div.links div.text {
+section#topics div.container div.quickLinks div.links div.text {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-left: 1rem;
 }
 
-section#about div.container div.quickLinks div.links div.text h3 {
+section#topics div.container div.quickLinks div.links div.text h3 {
   margin: 0;
 }
 
-section#about div.container div.quickLinks div.links div.text .one {
+section#topics div.container div.quickLinks div.links div.text .one {
   color: var(--blue);
 }
 
-section#about div.container div.quickLinks div.links div.text .two {
+section#topics div.container div.quickLinks div.links div.text .two {
   color: var(--orange-light);
 }
 
-section#about div.container div.quickLinks div.links div.text .three {
+section#topics div.container div.quickLinks div.links div.text .three {
   color: var(--violet-dark);
 }
 
-section#about div.container div.quickLinks div.links div.text .four {
+section#topics div.container div.quickLinks div.links div.text .four {
   color: var(--blue-light);
 }
 
-section#about div.container div.quickLinks div.links div.text .five {
+section#topics div.container div.quickLinks div.links div.text .five {
   color: var(--orange);
 }
 
-section#about div.container div.quickLinks div.links div.text .six {
+section#topics div.container div.quickLinks div.links div.text .six {
   color: var(--pink);
 }
 
-section#about div.container div.quickLinks div.links div.text .seven {
+section#topics div.container div.quickLinks div.links div.text .seven {
   color: var(--blue-dark);
 }
 
-section#about div.container div.quickLinks div.links div.text .eight {
+section#topics div.container div.quickLinks div.links div.text .eight {
   color: var(--violet);
 }
 
-section#about div.container div.quickLinks div.links div.text p {
+section#topics div.container div.quickLinks div.links div.text p {
   margin: 0;
 }
 
-section#about div.container:nth-of-type(2) {
+section#topics div.container:nth-of-type(2) {
   padding-top: 0;
 }
 
-section#about div.container:nth-of-type(2) div.topPics .headingh2 {
+section#topics div.container:nth-of-type(2) div.topPics .headingh2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,15 +574,15 @@ section#about div.container:nth-of-type(2) div.topPics .headingh2 {
   margin-bottom: 3rem;
 }
 
-section#about div.container:nth-of-type(2) div.topPics .headingh2 img {
+section#topics div.container:nth-of-type(2) div.topPics .headingh2 img {
   width: 29px;
 }
 
-section#about div.container:nth-of-type(2) div.topPics .headingh2 h2 {
+section#topics div.container:nth-of-type(2) div.topPics .headingh2 h2 {
   margin-left: 1rem;
 }
 
-section#about div.container:nth-of-type(2) div.topPics div.pics {
+section#topics div.container:nth-of-type(2) div.topPics div.pics {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,16 +598,16 @@ section#about div.container:nth-of-type(2) div.topPics div.pics {
           align-items: center;
 }
 
-section#about div.container:nth-of-type(2) div.topPics div.pics article {
+section#topics div.container:nth-of-type(2) div.topPics div.pics article {
   padding: 1rem;
   position: relative;
 }
 
-section#about div.container:nth-of-type(2) div.topPics div.pics article img {
+section#topics div.container:nth-of-type(2) div.topPics div.pics article img {
   width: 300px;
 }
 
-section#about div.container:nth-of-type(2) div.topPics div.pics article .layerColor {
+section#topics div.container:nth-of-type(2) div.topPics div.pics article .layerColor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -613,7 +617,7 @@ section#about div.container:nth-of-type(2) div.topPics div.pics article .layerCo
   position: absolute;
   width: 30%;
   height: 30px;
-  bottom: 145px;
+  bottom: 173px;
   left: 30px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -622,38 +626,298 @@ section#about div.container:nth-of-type(2) div.topPics div.pics article .layerCo
   -o-border-radius: 5px;
 }
 
-section#about div.container:nth-of-type(2) div.topPics div.pics article .layerColor img {
+section#topics div.container:nth-of-type(2) div.topPics div.pics article .layerColor img {
   width: 18px;
   margin-left: 0.6rem;
 }
 
-section#about div.container:nth-of-type(2) div.topPics div.pics article .layerColor p {
+section#topics div.container:nth-of-type(2) div.topPics div.pics article .layerColor p {
   margin-left: 0.6rem;
   color: var(--white);
 }
 
-section#about div.container:nth-of-type(2) div.topPics div.pics article .layerColor1 {
+section#topics div.container:nth-of-type(2) div.topPics div.pics article .layerColor1 {
   background-color: var(--blue);
 }
 
-section#about div.container:nth-of-type(2) div.topPics div.pics article .layerColor2 {
+section#topics div.container:nth-of-type(2) div.topPics div.pics article .layerColor2 {
   background-color: var(--pink);
 }
 
-section#about div.container:nth-of-type(2) div.topPics div.pics article .layerColor3 {
+section#topics div.container:nth-of-type(2) div.topPics div.pics article .layerColor3 {
   background-color: var(--blue-dark);
 }
 
-section#about div.container:nth-of-type(2) div.topPics div.pics article .layerColor4 {
+section#topics div.container:nth-of-type(2) div.topPics div.pics article .layerColor4 {
   background-color: var(--violet-dark);
 }
 
-section#about div.container:nth-of-type(2) div.topPics div.pics article h3 {
-  margin-top: 30px;
+section#topics div.container:nth-of-type(2) div.topPics div.pics article h3 {
+  margin-top: 3rem;
 }
 
-section#about div.container:nth-of-type(2) div.topPics div.pics article a:link, section#about div.container:nth-of-type(2) div.topPics div.pics article a:visited {
+section#topics div.container:nth-of-type(2) div.topPics div.pics article p {
+  font-style: italic;
+}
+
+section#topics div.container:nth-of-type(2) div.topPics div.pics article a:link, section#topics div.container:nth-of-type(2) div.topPics div.pics article a:visited {
   color: var(--black);
   font-weight: 600;
+}
+
+section#initiatives {
+  width: 100%;
+  background-color: var(--violet-dark);
+}
+
+section#initiatives .container .headingh2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#initiatives .container .headingh2 img {
+  width: 29px;
+}
+
+section#initiatives .container .headingh2 h2 {
+  margin-left: 1rem;
+}
+
+section#initiatives .container .headingh2 h2 {
+  color: var(--white);
+}
+
+section#initiatives .container .imageContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#initiatives .container .imageContent article {
+  padding: 1rem;
+}
+
+section#initiatives .container .imageContent article img {
+  width: 400px;
+}
+
+section#initiatives .container .imageContent article h3 {
+  margin-top: 30px;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+section#initiatives .container .imageContent article a:link, section#initiatives .container .imageContent article a:visited {
+  color: var(--white);
+  font-weight: 600;
+}
+
+section#sponsored div.pedroMiranda {
+  width: 1300px;
+  height: 568px;
+  background: url("../src/pedro-miranda2.jpg") center/cover;
+  background-repeat: no-repeat;
+}
+
+section#sponsored div.pedroMiranda .headingh2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+  padding: 4rem 0rem 2rem 6rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+section#sponsored div.pedroMiranda .headingh2 img {
+  width: 29px;
+}
+
+section#sponsored div.pedroMiranda .headingh2 h2 {
+  margin-left: 1rem;
+}
+
+section#sponsored div.pedroMiranda .headingh2 h2 {
+  color: var(--white);
+}
+
+section#sponsored div.pedroMiranda div.highLight {
+  margin-left: 6rem;
+}
+
+section#sponsored div.pedroMiranda div.highLight p {
+  color: var(--white);
+  width: 570px;
+}
+
+section#sponsored div.pedroMiranda div.highLight p:nth-of-type(2) {
+  margin-bottom: 4rem;
+}
+
+section#sponsored div.pedroMiranda div.highLight a.btn-white {
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  background-color: var(--violet-dark);
+  color: var(--white);
+  border: none;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all ease-in 0.4s;
+  background-color: var(--white);
+  color: var(--black);
+  padding: 0.66rem;
+}
+
+section#sponsored div.pedroMiranda div.highLight a.btn-white:hover {
+  background-color: var(--violet);
+}
+
+section#testimonials .container div.topPics .headingh2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+section#testimonials .container div.topPics .headingh2 img {
+  width: 29px;
+}
+
+section#testimonials .container div.topPics .headingh2 h2 {
+  margin-left: 1rem;
+}
+
+section#testimonials .container div.topPics div.pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#testimonials .container div.topPics div.pics article {
+  padding: 1rem;
+  position: relative;
+}
+
+section#testimonials .container div.topPics div.pics article img {
+  width: 300px;
+}
+
+section#testimonials .container div.topPics div.pics article .layerColor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 30%;
+  height: 30px;
+  bottom: 173px;
+  left: 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+section#testimonials .container div.topPics div.pics article .layerColor img {
+  width: 18px;
+  margin-left: 0.6rem;
+}
+
+section#testimonials .container div.topPics div.pics article .layerColor p {
+  margin-left: 0.6rem;
+  color: var(--white);
+}
+
+section#testimonials .container div.topPics div.pics article .layerColor1 {
+  background-color: var(--blue);
+}
+
+section#testimonials .container div.topPics div.pics article .layerColor2 {
+  background-color: var(--pink);
+}
+
+section#testimonials .container div.topPics div.pics article .layerColor3 {
+  background-color: var(--blue-dark);
+}
+
+section#testimonials .container div.topPics div.pics article .layerColor4 {
+  background-color: var(--orange);
+}
+
+section#testimonials .container div.topPics div.pics article h3 {
+  margin-top: 3rem;
+}
+
+section#testimonials .container div.topPics div.pics article .one {
+  color: var(--blue);
+}
+
+section#testimonials .container div.topPics div.pics article .two {
+  color: var(--pink);
+}
+
+section#testimonials .container div.topPics div.pics article .three {
+  color: var(--blue-dark);
+}
+
+section#testimonials .container div.topPics div.pics article .four {
+  color: var(--orange);
+}
+
+section#testimonials .container div.topPics div.pics article p {
+  font-style: italic;
+}
+
+section#testimonials .container div.topPics div.pics article a:link, section#testimonials .container div.topPics div.pics article a:visited {
+  color: var(--black);
+  font-weight: 600;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=style.css.map */

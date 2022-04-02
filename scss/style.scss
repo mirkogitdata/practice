@@ -192,18 +192,10 @@ section#hero {
   }
 }
 //======= ABOUT ======
-section#about {
+section#topics {
   div.container {
     .headingh2 {
-      display: flex;
-      align-items: center;
-      margin-bottom: 3rem;
-      img {
-         width: 29px;
-      }
-      h2 {
-         margin-left: 1rem;
-      }
+     @include h2;
     }
     div.quickLinks {
       display: flex;
@@ -326,7 +318,7 @@ section#about {
             position: absolute;
             width: 30%;
             height: 30px;
-            bottom: 145px;
+            bottom: 173px;
             left: 30px;
             border-radius: 5px;
             -webkit-border-radius: 5px;
@@ -347,7 +339,10 @@ section#about {
             background-color: var(--violet-dark);
           }
           h3 {
-            margin-top: 30px;
+            margin-top: 3rem;
+          }
+          p{
+            font-style: italic;
           }
           a {
             &:link,
@@ -358,6 +353,164 @@ section#about {
           }
         }
       }
-    }
+    } //end topics
+  }
+}
+
+section#initiatives {
+  .container {
+    .headingh2 {
+      @include h2;
+      h2 {
+        color: var(--white);
+      }
+      justify-content: center;
+     }
+     .imageContent {
+       article {
+         img {
+          width: 400px;
+         }
+         h3 {
+          margin-top: 30px;
+          margin-bottom: 1rem;
+          color: var(--white);
+        }
+        a {
+          &:link,
+          &:visited {
+            color: var(--white);
+            font-weight: 600;
+          }
+        }
+        padding: 1rem;
+       }
+       display: flex;
+       flex-flow: row;
+       justify-content: center;
+       align-items: center;
+     }
+  }
+  width: 100%;
+  background-color: var(--violet-dark);
+}
+ section#sponsored {
+  div.pedroMiranda {
+    .headingh2 {
+      @include h2;
+      h2 {
+        color: var(--white);
+      }
+      padding: 4rem 0rem 2rem 6rem;
+      justify-content: flex-start;
+     }
+     div.highLight {
+       p {
+         color: var(--white);
+         width: 570px;
+       }
+       p:nth-of-type(2) {
+          margin-bottom: 4rem;
+       }
+       a.btn-white {
+         @include button;
+         background-color: var(--white);
+         color: var(--black);
+         padding: 0.66rem;
+       }
+       margin-left: 6rem;
+     }
+     @include perdoMiranda2;
+  }
+}
+
+section#testimonials {
+  .container {
+    div.topPics {
+      .headingh2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+        img {
+           width: 29px;
+        }
+        h2 {
+           margin-left: 1rem;
+        }
+      }
+      div.pics {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        article {
+          padding: 1rem;
+          position: relative;
+          img {
+            width: 300px;
+          }
+          .layerColor {
+            img {
+              width: 18px;
+              margin-left: 0.6rem;
+            }
+            p {
+               margin-left: 0.6rem;
+               color: var(--white);
+            }
+            display: flex;
+            align-items: center;
+            position: absolute;
+            width: 30%;
+            height: 30px;
+            bottom: 173px;
+            left: 30px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+          }
+          .layerColor1 {
+            background-color: var(--blue);
+          }
+          .layerColor2 {
+            background-color: var(--pink);
+          }
+          .layerColor3 {
+            background-color: var(--blue-dark);
+          }
+          .layerColor4 {
+            background-color: var(--orange);
+          }
+          h3 {
+            margin-top: 3rem;
+          }
+          .one {
+            color: var(--blue);
+          }
+          .two {
+            color: var(--pink);
+          }
+          .three {
+            color: var(--blue-dark)
+          }
+          .four {
+            color: var(--orange);
+          }
+          p{
+            font-style: italic;
+          }
+          a {
+            &:link,
+            &:visited {
+              color: var(--black);
+              font-weight: 600;
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+    } //end topics
   }
 }
