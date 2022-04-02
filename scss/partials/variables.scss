@@ -70,9 +70,29 @@
   }
 }
 
+
+@mixin h3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  img {
+     width: 29px;
+  }
+  h3 {
+     margin-left: 1rem;
+  }
+}
+
 @mixin perdoMiranda2 {
     width: 1300px;
     height: 568px;
     background: url("../src/pedro-miranda2.jpg")  center/cover;
     background-repeat: no-repeat;
+}
+
+@mixin jonneMakikyro {
+  width: 1300px;
+  height: 568px;
+  background: url("../src/jonne-makikyro.jpg")  center/cover;
+  background-repeat: no-repeat;
 }

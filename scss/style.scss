@@ -356,7 +356,7 @@ section#topics {
     } //end topics
   }
 }
-
+//======= INIIATIVES ======
 section#initiatives {
   .container {
     .headingh2 {
@@ -394,6 +394,7 @@ section#initiatives {
   width: 100%;
   background-color: var(--violet-dark);
 }
+//======= SPONSORED ======
  section#sponsored {
   div.pedroMiranda {
     .headingh2 {
@@ -423,7 +424,7 @@ section#initiatives {
      @include perdoMiranda2;
   }
 }
-
+//======= TEWSTIMONIALS ======
 section#testimonials {
   .container {
     div.topPics {
@@ -513,4 +514,36 @@ section#testimonials {
       }
     } //end topics
   }
+}
+
+section#partners {
+  div.jonne-makikyro {
+      h2 {
+
+      }
+      div.highLight {
+        .headingh3 {
+          @include h3;
+          h2 {
+            color: var(--white);
+          }
+        }
+         p {
+           color: var(--white);
+           width: 570px;
+         }
+         p:nth-of-type(2) {
+            margin-bottom: 4rem;
+         }
+         a.btn-white {
+           @include button;
+           background-color: var(--white);
+           color: var(--black);
+           padding: 0.66rem;
+         }
+         margin-left: 6rem;
+    }
+    @include jonneMakikyro;
+  }
+  
 }

@@ -920,4 +920,73 @@ section#testimonials .container div.topPics div.pics article a:link, section#tes
   font-weight: 600;
   opacity: 0.7;
 }
+
+section#partners div.jonne-makikyro {
+  width: 1300px;
+  height: 568px;
+  background: url("../src/jonne-makikyro.jpg") center/cover;
+  background-repeat: no-repeat;
+}
+
+section#partners div.jonne-makikyro div.highLight {
+  margin-left: 6rem;
+}
+
+section#partners div.jonne-makikyro div.highLight .headingh3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+section#partners div.jonne-makikyro div.highLight .headingh3 img {
+  width: 29px;
+}
+
+section#partners div.jonne-makikyro div.highLight .headingh3 h3 {
+  margin-left: 1rem;
+}
+
+section#partners div.jonne-makikyro div.highLight .headingh3 h2 {
+  color: var(--white);
+}
+
+section#partners div.jonne-makikyro div.highLight p {
+  color: var(--white);
+  width: 570px;
+}
+
+section#partners div.jonne-makikyro div.highLight p:nth-of-type(2) {
+  margin-bottom: 4rem;
+}
+
+section#partners div.jonne-makikyro div.highLight a.btn-white {
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  background-color: var(--violet-dark);
+  color: var(--white);
+  border: none;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all ease-in 0.4s;
+  background-color: var(--white);
+  color: var(--black);
+  padding: 0.66rem;
+}
+
+section#partners div.jonne-makikyro div.highLight a.btn-white:hover {
+  background-color: var(--violet);
+}
 /*# sourceMappingURL=style.css.map */
