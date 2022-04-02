@@ -461,7 +461,16 @@ section#topics div.container div.quickLinks {
   margin-bottom: 3rem;
 }
 
-section#topics div.container div.quickLinks div.links {
+section#topics div.container div.quickLinks a {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+section#topics div.container div.quickLinks a:link, section#topics div.container div.quickLinks a:visited {
+  color: var(--black);
+}
+
+section#topics div.container div.quickLinks a div.links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,105 +480,103 @@ section#topics div.container div.quickLinks div.links {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
 }
 
-section#topics div.container div.quickLinks div.links div.circle {
+section#topics div.container div.quickLinks a div.links div.circle {
   width: 40px;
   background-color: var(--blue);
   padding: 15px;
-  border-radius: 40px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
-section#topics div.container div.quickLinks div.links div.circle2 {
+section#topics div.container div.quickLinks a div.links div.circle2 {
   background-color: var(--orange-light);
 }
 
-section#topics div.container div.quickLinks div.links div.circle3 {
+section#topics div.container div.quickLinks a div.links div.circle3 {
   background-color: var(--violet-dark);
 }
 
-section#topics div.container div.quickLinks div.links div.circle3 img {
+section#topics div.container div.quickLinks a div.links div.circle3 img {
   width: 49px;
 }
 
-section#topics div.container div.quickLinks div.links div.circle4 {
+section#topics div.container div.quickLinks a div.links div.circle4 {
   background-color: var(--blue-light);
 }
 
-section#topics div.container div.quickLinks div.links div.circle5 {
+section#topics div.container div.quickLinks a div.links div.circle5 {
   background-color: var(--orange);
 }
 
-section#topics div.container div.quickLinks div.links div.circle6 {
+section#topics div.container div.quickLinks a div.links div.circle6 {
   background-color: var(--pink);
   margin-left: 1rem;
 }
 
-section#topics div.container div.quickLinks div.links div.circle6 img {
-  width: 38px;
+section#topics div.container div.quickLinks a div.links div.circle6 img {
+  width: 36px;
 }
 
-section#topics div.container div.quickLinks div.links div.circle7 {
+section#topics div.container div.quickLinks a div.links div.circle7 {
   background-color: var(--blue-dark);
 }
 
-section#topics div.container div.quickLinks div.links div.circle8 {
+section#topics div.container div.quickLinks a div.links div.circle8 {
   background-color: var(--violet);
 }
 
-section#topics div.container div.quickLinks div.links div.circle8 img {
-  width: 38px;
+section#topics div.container div.quickLinks a div.links div.circle8 img {
+  width: 36px;
 }
 
-section#topics div.container div.quickLinks div.links div.text {
+section#topics div.container div.quickLinks a div.links div.text {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-left: 1rem;
 }
 
-section#topics div.container div.quickLinks div.links div.text h3 {
+section#topics div.container div.quickLinks a div.links div.text h3 {
   margin: 0;
 }
 
-section#topics div.container div.quickLinks div.links div.text .one {
+section#topics div.container div.quickLinks a div.links div.text .one {
   color: var(--blue);
 }
 
-section#topics div.container div.quickLinks div.links div.text .two {
+section#topics div.container div.quickLinks a div.links div.text .two {
   color: var(--orange-light);
 }
 
-section#topics div.container div.quickLinks div.links div.text .three {
+section#topics div.container div.quickLinks a div.links div.text .three {
   color: var(--violet-dark);
 }
 
-section#topics div.container div.quickLinks div.links div.text .four {
+section#topics div.container div.quickLinks a div.links div.text .four {
   color: var(--blue-light);
 }
 
-section#topics div.container div.quickLinks div.links div.text .five {
+section#topics div.container div.quickLinks a div.links div.text .five {
   color: var(--orange);
 }
 
-section#topics div.container div.quickLinks div.links div.text .six {
+section#topics div.container div.quickLinks a div.links div.text .six {
   color: var(--pink);
 }
 
-section#topics div.container div.quickLinks div.links div.text .seven {
+section#topics div.container div.quickLinks a div.links div.text .seven {
   color: var(--blue-dark);
 }
 
-section#topics div.container div.quickLinks div.links div.text .eight {
+section#topics div.container div.quickLinks a div.links div.text .eight {
   color: var(--violet);
 }
 
-section#topics div.container div.quickLinks div.links div.text p {
+section#topics div.container div.quickLinks a div.links div.text p {
   margin: 0;
 }
 
@@ -772,6 +779,11 @@ section#sponsored div.pedroMiranda .alfaCover {
   background-image: -webkit-gradient(linear, left top, right top, from(#56bdfd), to(rgba(86, 189, 253, 0.3)));
   background-image: linear-gradient(90deg, #56bdfd, rgba(86, 189, 253, 0.3));
   z-index: 2000;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 section#sponsored div.pedroMiranda .alfaCover .headingh2 {

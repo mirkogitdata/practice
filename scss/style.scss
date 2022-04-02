@@ -203,89 +203,95 @@ section#topics {
       justify-content: center;
       align-items: center;
       margin-bottom: 3rem;
-      div.links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      a {
         flex-basis: 25%;
-        div.circle {
+        &:link,
+        &:visited {
+          color: var(--black);
+        }
+        div.links {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          div.circle {
+              img {
+               
+              }
+            width: 40px;
+            background-color: var(--blue);
+            padding: 15px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+}
+          div.circle2 {
+            background-color: var(--orange-light);
+          }
+          div.circle3 {
+            background-color: var(--violet-dark);
             img {
-             
+              width: 49px;
             }
-          width: 40px;
-          background-color: var(--blue);
-          padding: 15px;
-          border-radius: 40px;
-          -webkit-border-radius: 40px;
-          -moz-border-radius: 40px;
-          -ms-border-radius: 40px;
-          -o-border-radius: 40px;
-        }
-        div.circle2 {
-          background-color: var(--orange-light);
-        }
-        div.circle3 {
-          background-color: var(--violet-dark);
-          img {
-            width: 49px;
           }
-        }
-        div.circle4 {
-          background-color: var(--blue-light);
-        }
-        div.circle5 {
-          background-color: var(--orange);
-        }
-        div.circle6 {
-          background-color: var(--pink);
-          margin-left: 1rem;
-          img {
-            width: 38px;
+          div.circle4 {
+            background-color: var(--blue-light);
           }
-        }
-        div.circle7 {
-          background-color: var(--blue-dark);
-        }
-        div.circle8 {
-          background-color: var(--violet);
-          img {
-            width: 38px;
+          div.circle5 {
+            background-color: var(--orange);
           }
-        }
-        div.text {
-          box-sizing: border-box;
-          margin-left: 1rem;
-          h3 {
+          div.circle6 {
+            background-color: var(--pink);
+            margin-left: 1rem;
+            img {
+              width: 36px;
+            }
+          }
+          div.circle7 {
+            background-color: var(--blue-dark);
+          }
+          div.circle8 {
+            background-color: var(--violet);
+            img {
+              width: 36px;
+            }
+          }
+          div.text {
+            box-sizing: border-box;
+            margin-left: 1rem;
+            h3 {
+                margin: 0;
+            }
+            .one {
+              color: var(--blue);
+            }
+            .two {
+              color: var(--orange-light);
+            }
+            .three {
+              color: var(--violet-dark);
+            }
+            .four {
+              color: var(--blue-light);
+            }
+            .five {
+              color: var(--orange);
+            }
+            .six {
+              color: var(--pink);
+            }
+            .seven {
+              color: var(--blue-dark);
+            }
+            .eight {
+              color: var(--violet);
+            }
+            p{
               margin: 0;
+            }
           }
-          .one {
-            color: var(--blue);
-          }
-          .two {
-            color: var(--orange-light);
-          }
-          .three {
-            color: var(--violet-dark);
-          }
-          .four {
-            color: var(--blue-light);
-          }
-          .five {
-            color: var(--orange);
-          }
-          .six {
-            color: var(--pink);
-          }
-          .seven {
-            color: var(--blue-dark);
-          }
-          .eight {
-            color: var(--violet);
-          }
-          p{
-            margin: 0;
-          }
-        }
+        }//end
       }
     }
   }
@@ -444,9 +450,14 @@ section#initiatives {
        height: 568px;
        background-image: linear-gradient(90deg, rgba(86,189, 253, 1.0),rgba(86,189, 253, 0.3));
        z-index: 2000;
+       border-radius: 15px;
+       -webkit-border-radius: 15px;
+       -moz-border-radius: 15px;
+       -ms-border-radius: 15px;
+       -o-border-radius: 15px;
     }
      @include perdoMiranda1;
-  }
+   }
   padding: 80px 0rem;
 }
 //======= TEWSTIMONIALS ======
