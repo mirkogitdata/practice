@@ -74,7 +74,8 @@
 @mixin h3 {
   display: flex;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   img {
      width: 29px;
   }
@@ -83,12 +84,6 @@
   }
 }
 
-@mixin perdoMiranda2 {
-    width: 1300px;
-    height: 568px;
-    background: url("../src/pedro-miranda2.jpg")  center/cover;
-    background-repeat: no-repeat;
-}
 @mixin perdoMiranda1 {
   width: 1300px;
   height: 568px;
@@ -96,7 +91,6 @@
   background-position:  50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -105,7 +99,12 @@
 }
 @mixin jonneMakikyro {
   width: 1300px;
-  height: 568px;
+  height: 679px;
   background: url("../src/jonne-makikyro.jpg")  center/cover;
   background-repeat: no-repeat;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }

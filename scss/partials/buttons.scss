@@ -1,6 +1,9 @@
 @mixin button {
   width: 140px;
   height: 40px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: 500;
   text-align: center;
   background-color: var(--violet-dark);
   color: var(--white);
@@ -17,6 +20,6 @@
   -ms-transition: all 0.4s;
   -o-transition: all ease-in 0.4s;
   &:hover {
-    background-color: var(--violet);
+    background-color: var(--orange);
   }
 }

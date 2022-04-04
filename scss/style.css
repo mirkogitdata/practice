@@ -22,7 +22,7 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 h4 {
@@ -216,6 +216,9 @@ header div.login {
 header div.login button.btn-violet {
   width: 140px;
   height: 40px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: 500;
   text-align: center;
   background-color: var(--violet-dark);
   color: var(--white);
@@ -234,7 +237,7 @@ header div.login button.btn-violet {
 }
 
 header div.login button.btn-violet:hover {
-  background-color: var(--violet);
+  background-color: var(--orange);
 }
 
 header div.login p {
@@ -389,6 +392,9 @@ section#hero div.gradient div.searchBox div.line span {
 section#hero div.gradient div.searchBox button.btn-violet {
   width: 140px;
   height: 40px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: 500;
   text-align: center;
   background-color: var(--violet-dark);
   color: var(--white);
@@ -409,7 +415,7 @@ section#hero div.gradient div.searchBox button.btn-violet {
 }
 
 section#hero div.gradient div.searchBox button.btn-violet:hover {
-  background-color: var(--violet);
+  background-color: var(--orange);
 }
 
 section#hero div.gradient img.hero-left {
@@ -502,7 +508,7 @@ section#topics div.container div.quickLinks a div.links div.circle3 {
 }
 
 section#topics div.container div.quickLinks a div.links div.circle3 img {
-  width: 49px;
+  width: 50px;
 }
 
 section#topics div.container div.quickLinks a div.links div.circle4 {
@@ -515,11 +521,10 @@ section#topics div.container div.quickLinks a div.links div.circle5 {
 
 section#topics div.container div.quickLinks a div.links div.circle6 {
   background-color: var(--pink);
-  margin-left: 1rem;
 }
 
 section#topics div.container div.quickLinks a div.links div.circle6 img {
-  width: 36px;
+  width: 34px;
 }
 
 section#topics div.container div.quickLinks a div.links div.circle7 {
@@ -531,7 +536,7 @@ section#topics div.container div.quickLinks a div.links div.circle8 {
 }
 
 section#topics div.container div.quickLinks a div.links div.circle8 img {
-  width: 36px;
+  width: 34px;
 }
 
 section#topics div.container div.quickLinks a div.links div.text {
@@ -770,7 +775,6 @@ section#sponsored div.pedroMiranda {
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -791,7 +795,11 @@ section#sponsored div.pedroMiranda .alfaCover {
   -o-border-radius: 15px;
 }
 
-section#sponsored div.pedroMiranda .alfaCover .headingh2 {
+section#sponsored div.pedroMiranda .alfaCover div.highLight {
+  padding: 120px;
+}
+
+section#sponsored div.pedroMiranda .alfaCover div.highLight .headingh2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -799,26 +807,20 @@ section#sponsored div.pedroMiranda .alfaCover .headingh2 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 3rem;
-  padding: 4rem 0rem 2rem 6rem;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  margin-bottom: 0;
 }
 
-section#sponsored div.pedroMiranda .alfaCover .headingh2 img {
+section#sponsored div.pedroMiranda .alfaCover div.highLight .headingh2 img {
   width: 29px;
 }
 
-section#sponsored div.pedroMiranda .alfaCover .headingh2 h2 {
+section#sponsored div.pedroMiranda .alfaCover div.highLight .headingh2 h2 {
   margin-left: 1rem;
 }
 
-section#sponsored div.pedroMiranda .alfaCover .headingh2 h2 {
+section#sponsored div.pedroMiranda .alfaCover div.highLight .headingh2 h2 {
   color: var(--white);
-}
-
-section#sponsored div.pedroMiranda .alfaCover div.highLight {
-  margin-left: 6rem;
+  margin-top: 0;
 }
 
 section#sponsored div.pedroMiranda .alfaCover div.highLight p {
@@ -827,12 +829,15 @@ section#sponsored div.pedroMiranda .alfaCover div.highLight p {
 }
 
 section#sponsored div.pedroMiranda .alfaCover div.highLight p:nth-of-type(2) {
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 section#sponsored div.pedroMiranda .alfaCover div.highLight a.btn-white {
   width: 140px;
   height: 40px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: 500;
   text-align: center;
   background-color: var(--violet-dark);
   color: var(--white);
@@ -850,11 +855,12 @@ section#sponsored div.pedroMiranda .alfaCover div.highLight a.btn-white {
   -o-transition: all ease-in 0.4s;
   background-color: var(--white);
   color: var(--black);
+  width: 180px;
   padding: 0.66rem;
 }
 
 section#sponsored div.pedroMiranda .alfaCover div.highLight a.btn-white:hover {
-  background-color: var(--violet);
+  background-color: var(--orange);
 }
 
 section#testimonials .container div.topPics .headingh2 {
@@ -979,51 +985,92 @@ section#testimonials .container div.topPics div.pics article a:link, section#tes
   opacity: 0.7;
 }
 
+section#partners {
+  overflow: hidden;
+}
+
 section#partners div.jonne-makikyro {
   width: 1300px;
-  height: 568px;
+  height: 679px;
   background: url("../src/jonne-makikyro.jpg") center/cover;
   background-repeat: no-repeat;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 section#partners div.jonne-makikyro div.highLight {
-  margin-left: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 1300px;
+  height: 679px;
+  color: var(--white);
+  background-image: -webkit-gradient(linear, right top, left top, from(#56bdfd), to(rgba(86, 189, 253, 0.2)));
+  background-image: linear-gradient(270deg, #56bdfd, rgba(86, 189, 253, 0.2));
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
-section#partners div.jonne-makikyro div.highLight .headingh3 {
+section#partners div.jonne-makikyro div.highLight div.contentRight {
+  width: 50%;
+  padding-left: 30px;
+}
+
+section#partners div.jonne-makikyro div.highLight div.contentRight h2 {
+  width: 90%;
+  margin-top: 0;
+}
+
+section#partners div.jonne-makikyro div.highLight div.contentRight .headingh3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-section#partners div.jonne-makikyro div.highLight .headingh3 img {
+section#partners div.jonne-makikyro div.highLight div.contentRight .headingh3 img {
   width: 29px;
 }
 
-section#partners div.jonne-makikyro div.highLight .headingh3 h3 {
+section#partners div.jonne-makikyro div.highLight div.contentRight .headingh3 h3 {
   margin-left: 1rem;
 }
 
-section#partners div.jonne-makikyro div.highLight .headingh3 h2 {
-  color: var(--white);
+section#partners div.jonne-makikyro div.highLight div.contentRight p {
+  width: 86%;
 }
 
-section#partners div.jonne-makikyro div.highLight p {
-  color: var(--white);
-  width: 570px;
-}
-
-section#partners div.jonne-makikyro div.highLight p:nth-of-type(2) {
+section#partners div.jonne-makikyro div.highLight div.contentRight p:nth-of-type(2) {
   margin-bottom: 4rem;
+  width: 88%;
 }
 
-section#partners div.jonne-makikyro div.highLight a.btn-white {
+section#partners div.jonne-makikyro div.highLight div.contentRight a.btn-white {
   width: 140px;
   height: 40px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: 500;
   text-align: center;
   background-color: var(--violet-dark);
   color: var(--white);
@@ -1044,7 +1091,14 @@ section#partners div.jonne-makikyro div.highLight a.btn-white {
   padding: 0.66rem;
 }
 
-section#partners div.jonne-makikyro div.highLight a.btn-white:hover {
-  background-color: var(--violet);
+section#partners div.jonne-makikyro div.highLight div.contentRight a.btn-white:hover {
+  background-color: var(--orange);
+}
+
+section#partners div.jonne-makikyro img.hero-left {
+  width: 350px;
+  position: relative;
+  bottom: 375px;
+  left: 50px;
 }
 /*# sourceMappingURL=style.css.map */
