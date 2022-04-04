@@ -97,6 +97,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 @mixin jonneMakikyro {
   width: 1300px;
