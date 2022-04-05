@@ -1254,13 +1254,12 @@ section#news .container div.newsPics div.pics article a:link, section#news .cont
   opacity: 0.7;
 }
 
-section#training {
+section#testSkills {
   background-color: var(--gray);
   width: 100vw;
-  margin-bottom: 80px;
 }
 
-section#training .container div.testSkills {
+section#testSkills .container div.testSkills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1272,13 +1271,13 @@ section#training .container div.testSkills {
           align-items: center;
 }
 
-section#training .container div.testSkills div.highLight {
+section#testSkills .container div.testSkills div.highLight {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   margin-right: 150px;
 }
 
-section#training .container div.testSkills div.highLight .headingh2 {
+section#testSkills .container div.testSkills div.highLight .headingh2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1288,28 +1287,28 @@ section#training .container div.testSkills div.highLight .headingh2 {
   margin-bottom: 1rem;
 }
 
-section#training .container div.testSkills div.highLight .headingh2 img {
+section#testSkills .container div.testSkills div.highLight .headingh2 img {
   width: 29px;
 }
 
-section#training .container div.testSkills div.highLight .headingh2 h2 {
+section#testSkills .container div.testSkills div.highLight .headingh2 h2 {
   margin-left: 20px;
 }
 
-section#training .container div.testSkills div.highLight .headingh2 h2 {
+section#testSkills .container div.testSkills div.highLight .headingh2 h2 {
   color: var(--black);
 }
 
-section#training .container div.testSkills div.highLight p {
+section#testSkills .container div.testSkills div.highLight p {
   color: #999999;
   width: 570px;
 }
 
-section#training .container div.testSkills div.highLight p:nth-of-type(2) {
+section#testSkills .container div.testSkills div.highLight p:nth-of-type(2) {
   margin-bottom: 2.5rem;
 }
 
-section#training .container div.testSkills div.highLight a.btn-white {
+section#testSkills .container div.testSkills div.highLight a.btn-white {
   width: 140px;
   height: 40px;
   font-size: 1em;
@@ -1333,21 +1332,25 @@ section#training .container div.testSkills div.highLight a.btn-white {
   padding: 0.66rem 1.5rem;
 }
 
-section#training .container div.testSkills div.highLight a.btn-white:hover {
+section#testSkills .container div.testSkills div.highLight a.btn-white:hover {
   background-color: var(--orange);
 }
 
-section#training .container div.testSkills div.videoTest {
+section#testSkills .container div.testSkills div.highLight a.btn-white:hover {
+  color: var(--black);
+}
+
+section#testSkills .container div.testSkills div.videoTest {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   position: relative;
 }
 
-section#training .container div.testSkills div.videoTest img {
+section#testSkills .container div.testSkills div.videoTest img {
   width: 590px;
 }
 
-section#training .container div.testSkills div.videoTest img.video-icon {
+section#testSkills .container div.testSkills div.videoTest img.video-icon {
   width: 61px;
   position: absolute;
   top: 50%;
@@ -1357,5 +1360,78 @@ section#training .container div.testSkills div.videoTest img.video-icon {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+}
+
+section#team {
+  width: 100%;
+  height: 570px;
+  background: url("../src/cover-image.png");
+  background-position: 0% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--white);
+  position: relative;
+}
+
+section#team div.teamText {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+section#team div.teamText .headingh2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+section#team div.teamText .headingh2 img {
+  width: 29px;
+}
+
+section#team div.teamText .headingh2 h2 {
+  margin-left: 20px;
+}
+
+section#team div.teamText p.askTeam {
+  font-size: 29px;
+  margin-bottom: 4rem;
+}
+
+section#team div.teamText a.btn2 {
+  width: 140px;
+  height: 40px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--white);
+  border: 3px solid var(--white);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all ease-in 0.4s;
+  padding: 0.66rem 1.5rem;
+}
+
+section#team div.teamText a.btn2:hover {
+  background-color: var(--orange);
+  color: var(--black);
 }
 /*# sourceMappingURL=style.css.map */

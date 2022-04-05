@@ -686,10 +686,9 @@ section#news {
   }
 }
 //======= TRAINING ======
-section#training {
+section#testSkills {
   background-color: var(--gray);
   width: 100vw;
-  margin-bottom: 80px;
   .container {
     div.testSkills {
       display: flex;
@@ -714,6 +713,9 @@ section#training {
          a.btn-white {
            @include button;
            padding: 0.66rem 1.5rem;
+           &:hover {
+             color:var(--black);
+           }
          }
       }
       div.videoTest {
@@ -736,4 +738,33 @@ section#training {
       }
     }
   }
+}
+//======= TEAM ======
+section#team {
+  div.teamText {
+    .headingh2 {
+      @include h2;
+     }
+     p.askTeam {
+       font-size: 29px;
+       margin-bottom: 4rem;
+  
+     }
+     a.btn2 {
+       @include button2;
+       padding: 0.66rem 1.5rem;
+      
+     }
+     position: absolute;
+     top: 50%;
+     left: 65%;
+     transform: translate(-50%, -50%);
+     -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     -o-transform: translate(-50%, -50%);
+}
+   @include team;
+   color: var(--white);
+   position: relative;
 }

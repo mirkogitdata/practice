@@ -23,3 +23,29 @@
     background-color: var(--orange);
   }
 }
+
+@mixin button2 {
+  width: 140px;
+  height: 40px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--white);
+  border: 3px solid var(--white);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all ease-in 0.4s;
+  &:hover {
+    background-color: var(--orange);
+    color: var(--black);
+  }
+}
