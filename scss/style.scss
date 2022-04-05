@@ -50,7 +50,7 @@ header {
         }
       }
     }
-    margin-right: 5rem;
+    margin-right: 3rem;
   }
   nav.nav {
      margin-top: 1.5rem;
@@ -59,6 +59,7 @@ header {
        margin: 0;
        padding: 0;
        display: flex;
+       font-weight: 600;
        .nav-items {
          a {
           padding: 0 2rem;
@@ -333,7 +334,7 @@ section#topics {
             position: absolute;
             width: 30%;
             height: 30px;
-            bottom: 173px;
+            bottom: 177px;
             left: 30px;
             border-radius: 5px;
             -webkit-border-radius: 5px;
@@ -442,7 +443,10 @@ section#initiatives {
            background-color: var(--white);
            color: var(--black);
            width: 180px;
-           padding: 0.66rem;
+           padding: 0.66rem 1.5rem;
+           &:hover {
+            color: var(--white);
+          }
          }
          padding: 120px;
        }
@@ -458,6 +462,10 @@ section#initiatives {
     }
      @include perdoMiranda1;
    }
+   div.sponsored {
+    @include sponsored;
+  }
+   position: relative;
   padding: 80px 0rem;
 }
 //======= TEWSTIMONIALS ======
@@ -500,7 +508,7 @@ section#testimonials {
             position: absolute;
             width: 30%;
             height: 30px;
-            bottom: 173px;
+            bottom: 177px;
             left: 30px;
             border-radius: 5px;
             -webkit-border-radius: 5px;
@@ -577,7 +585,10 @@ section#partners {
              @include button;
              background-color: var(--white);
              color: var(--black);
-             padding: 0.66rem;
+             padding: 0.66rem 1.5rem;
+             &:hover {
+               color: var(--white);
+             }
            }
           width: 50%;
           padding-left: 30px;
@@ -602,7 +613,8 @@ section#partners {
       bottom: 375px;
       left: 50px;
     }
-    @include jonneMakikyro;
+    @include pedroMiranda2;
   }
   overflow: hidden;
 }
+//======= NEWS ======

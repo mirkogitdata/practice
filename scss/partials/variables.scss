@@ -23,7 +23,8 @@
     .fa-solid {
       color: black;
     }
-    .mySearch {
+    input[type="text"] {
+      font-size: 1em;
       border: none;
       margin-left: 1rem;
       &:focus {
@@ -97,14 +98,32 @@
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
-@mixin jonneMakikyro {
+@mixin pedroMiranda2 {
   width: 1300px;
   height: 679px;
-  background: url("../src/jonne-makikyro.jpg")  center/cover;
+  background: url("../src/pedro-miranda2.jpg")  center/cover;
   background-repeat: no-repeat;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+}
+
+@mixin sponsored {
+  width: 87px;
+  height: 30px;
+  text-align: center;
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  opacity: 0.4;
+  p {
+    background-color: var(--white);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
 }

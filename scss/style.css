@@ -127,7 +127,7 @@ header {
 }
 
 header div.logo {
-  margin-right: 5rem;
+  margin-right: 3rem;
 }
 
 header div.logo a p {
@@ -150,6 +150,7 @@ header nav.nav .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: 600;
 }
 
 header nav.nav .nav-list .nav-items a {
@@ -218,7 +219,7 @@ header div.login button.btn-violet {
   height: 40px;
   font-size: 1em;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   background-color: var(--violet-dark);
   color: var(--white);
@@ -369,12 +370,13 @@ section#hero div.gradient div.searchBox .searchTopic .fa-solid, section#hero div
   color: black;
 }
 
-section#hero div.gradient div.searchBox .searchTopic .mySearch, section#hero div.gradient div.searchBox .searchProject .mySearch {
+section#hero div.gradient div.searchBox .searchTopic input[type="text"], section#hero div.gradient div.searchBox .searchProject input[type="text"] {
+  font-size: 1em;
   border: none;
   margin-left: 1rem;
 }
 
-section#hero div.gradient div.searchBox .searchTopic .mySearch:focus, section#hero div.gradient div.searchBox .searchProject .mySearch:focus {
+section#hero div.gradient div.searchBox .searchTopic input[type="text"]:focus, section#hero div.gradient div.searchBox .searchProject input[type="text"]:focus {
   background-color: var(--violet-dark);
   color: var(--white);
   padding: 0.5rem;
@@ -394,7 +396,7 @@ section#hero div.gradient div.searchBox button.btn-violet {
   height: 40px;
   font-size: 1em;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   background-color: var(--violet-dark);
   color: var(--white);
@@ -642,7 +644,7 @@ section#topics div.container:nth-of-type(2) div.topPics div.pics article .layerC
   position: absolute;
   width: 30%;
   height: 30px;
-  bottom: 173px;
+  bottom: 177px;
   left: 30px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -765,6 +767,7 @@ section#initiatives .container .imageContent article a:link, section#initiatives
 }
 
 section#sponsored {
+  position: relative;
   padding: 80px 0rem;
 }
 
@@ -837,7 +840,7 @@ section#sponsored div.pedroMiranda .alfaCover div.highLight a.btn-white {
   height: 40px;
   font-size: 1em;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   background-color: var(--violet-dark);
   color: var(--white);
@@ -856,11 +859,34 @@ section#sponsored div.pedroMiranda .alfaCover div.highLight a.btn-white {
   background-color: var(--white);
   color: var(--black);
   width: 180px;
-  padding: 0.66rem;
+  padding: 0.66rem 1.5rem;
 }
 
 section#sponsored div.pedroMiranda .alfaCover div.highLight a.btn-white:hover {
   background-color: var(--orange);
+}
+
+section#sponsored div.pedroMiranda .alfaCover div.highLight a.btn-white:hover {
+  color: var(--white);
+}
+
+section#sponsored div.sponsored {
+  width: 87px;
+  height: 30px;
+  text-align: center;
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  opacity: 0.4;
+}
+
+section#sponsored div.sponsored p {
+  background-color: var(--white);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 section#testimonials .container div.topPics .headingh2 {
@@ -916,7 +942,7 @@ section#testimonials .container div.topPics div.pics article .layerColor {
   position: absolute;
   width: 30%;
   height: 30px;
-  bottom: 173px;
+  bottom: 177px;
   left: 30px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -992,7 +1018,7 @@ section#partners {
 section#partners div.jonne-makikyro {
   width: 1300px;
   height: 679px;
-  background: url("../src/jonne-makikyro.jpg") center/cover;
+  background: url("../src/pedro-miranda2.jpg") center/cover;
   background-repeat: no-repeat;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -1070,7 +1096,7 @@ section#partners div.jonne-makikyro div.highLight div.contentRight a.btn-white {
   height: 40px;
   font-size: 1em;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   background-color: var(--violet-dark);
   color: var(--white);
@@ -1088,11 +1114,15 @@ section#partners div.jonne-makikyro div.highLight div.contentRight a.btn-white {
   -o-transition: all ease-in 0.4s;
   background-color: var(--white);
   color: var(--black);
-  padding: 0.66rem;
+  padding: 0.66rem 1.5rem;
 }
 
 section#partners div.jonne-makikyro div.highLight div.contentRight a.btn-white:hover {
   background-color: var(--orange);
+}
+
+section#partners div.jonne-makikyro div.highLight div.contentRight a.btn-white:hover {
+  color: var(--white);
 }
 
 section#partners div.jonne-makikyro img.hero-left {
