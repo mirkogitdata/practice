@@ -41,16 +41,7 @@ header {
   justify-content: center;
   align-items: center;
   div.logo {
-    a {
-      p {
-        margin: 0;
-        font-size: 1.3em;
-        span.skills {
-          font-weight: bold;
-        }
-      }
-    }
-    margin-right: 3rem;
+    @include logo;
   }
   nav.nav {
      margin-top: 1.5rem;
@@ -122,7 +113,7 @@ div.dropdown {
   button.state {
     border: none;
     i {
-       
+       font-size: 1em;
     }
   }
   div.dropdown-content {
@@ -217,7 +208,7 @@ section#topics {
           align-items: center;
           div.circle {
               img {
-               
+                width: 100%;
               }
             width: 40px;
             background-color: var(--blue);
@@ -712,7 +703,7 @@ section#testSkills {
          }
          a.btn-white {
            @include button;
-           padding: 0.66rem 1.5rem;
+           padding: 0.66rem 2rem;
            &:hover {
              color:var(--black);
            }
@@ -723,17 +714,19 @@ section#testSkills {
          img {
           width: 590px;
          }
-         img.video-icon {
-           width: 61px;
-           position: absolute;
-           top: 50%;
-           left: 50%;
-           transform: translate(-50%, -50%);
-           -webkit-transform: translate(-50%, -50%);
-           -moz-transform: translate(-50%, -50%);
-           -ms-transform: translate(-50%, -50%);
-           -o-transform: translate(-50%, -50%);
-         } 
+         a {
+          img.video-icon {
+            width: 61px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            } 
+         }
          position: relative;
       }
     }
@@ -752,7 +745,7 @@ section#team {
      }
      a.btn2 {
        @include button2;
-       padding: 0.66rem 1.5rem;
+       padding: 0.66rem 2rem;
       
      }
      position: absolute;
@@ -767,4 +760,85 @@ section#team {
    @include team;
    color: var(--white);
    position: relative;
+}
+//======= FOOTER ======
+#footer {
+  width: 100vw;
+  background-color: var(--violet-dark);
+  color: var(--white);
+  div.container { 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--white);
+     div.logo {
+       @include logo;
+       p {
+         color: var(--white);
+       }
+       margin-right: 0;
+       flex-basis: 20%;
+     }
+     nav.nav {
+      flex-basis: 20%;
+      .nav-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        .nav-items {
+         margin: 10px 0rem; 
+          a {
+          color: var(--white);
+           padding: 0 2rem;
+           transition: all ease-in 0.2s;
+           -webkit-transition: all ease-in 0.2s;
+           -moz-transition: all ease-in 0.2s;
+           -ms-transition: all ease-in 0.2s;
+           -o-transition: all ease-in 0.2s;
+           &:hover{
+             color: var(--orange);
+            }  
+            a.last-link {
+            margin: 0;
+            }
+          }
+        }
+      } 
+    }
+    div.rectangle {
+      background-color: var(--violet-dark);
+      flex-basis: 20%;
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+     div.item {
+      height: 53.02px;
+       background-color: darken(#eaeff5, 10%);
+       opacity: 0.2;
+       
+     }
+    }
+    div.rectangle:nth-of-type(2) {
+      margin: 0 62.24px 0 0;
+    }
+  }
+  .container:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+   .linksFtr {
+     a {
+       &:link,
+       &:visited {
+        text-decoration: underline;
+        color: var(--white);
+       }
+       margin-left: 2rem;
+     }
+   }
+  }
 }
