@@ -62,12 +62,12 @@
 @mixin h2 {
   display: flex;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   img {
      width: 29px;
   }
   h2 {
-     margin-left: 1rem;
+     margin-left: 20px;
   }
 }
 
