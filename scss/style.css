@@ -12,6 +12,7 @@
   --blue: #0c7ee9;
   --blue-light: #56bdfd;
   --gray: #eaeff5;
+  --gray-a: rgba(199,213,229, 0.2);
 }
 
 h1 {
@@ -1473,7 +1474,7 @@ section#team div.teamText a.btn2:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  border-bottom: 1px solid var(--white);
+  border-bottom: 2px solid var(--gray-a);
 }
 
 #footer div.container div.logo {
@@ -1550,8 +1551,7 @@ section#team div.teamText a.btn2:hover {
 
 #footer div.container div.rectangle div.item {
   height: 53.02px;
-  background-color: #c7d5e5;
-  opacity: 0.2;
+  background-color: var(--gray-a);
 }
 
 #footer div.container div.rectangle:nth-of-type(2) {
