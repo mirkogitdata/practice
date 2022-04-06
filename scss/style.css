@@ -1569,6 +1569,7 @@ section#team div.teamText a.btn2:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 0;
+  font-size: 14px;
 }
 
 #footer .container:nth-of-type(2) .linksFtr a {
