@@ -414,6 +414,9 @@ section#initiatives {
             color: var(--white);
             margin-top: 0;
           }
+          img {
+            width: 38px;
+          }
          }
          p {
            color: var(--white);
@@ -471,6 +474,11 @@ section#testimonials {
           position: relative;
           img {
             width: 300px;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
           }
           .layerColor {
             img {
@@ -713,6 +721,11 @@ section#testSkills {
         flex-basis: 50%;
          img {
           width: 590px;
+          border-radius: 15px;
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
+          -ms-border-radius: 15px;
+          -o-border-radius: 15px;
          }
          a {
           img.video-icon {
