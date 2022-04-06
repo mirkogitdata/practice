@@ -281,9 +281,13 @@ section#topics {
             }
             p{
               margin: 0;
+              color: darken(#fff, 45%);
             }
           }
         }//end
+        div.link6 {
+          margin-left: 0.8rem;
+        }
       }
     }
   }
@@ -318,7 +322,7 @@ section#topics {
             position: absolute;
             width: 30%;
             height: 30px;
-            bottom: 177px;
+            bottom: 173px;
             left: 30px;
             border-radius: 5px;
             -webkit-border-radius: 5px;
@@ -494,7 +498,7 @@ section#testimonials {
             position: absolute;
             width: 30%;
             height: 30px;
-            bottom: 177px;
+            bottom: 173px;
             left: 30px;
             border-radius: 5px;
             -webkit-border-radius: 5px;
@@ -635,7 +639,7 @@ section#news {
             position: absolute;
             width: 22.283%;
             height: 30px;
-            bottom: 206px;
+            bottom: 197px;
             left: 43px;
             border-radius: 5px;
             -webkit-border-radius: 5px;
@@ -645,7 +649,6 @@ section#news {
           }
           .layerColor1 {
             background-color: var(--blue);
-            bottom: 201px;
           }
           .layerColor2 {
             background-color: var(--orange);

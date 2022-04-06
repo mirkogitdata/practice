@@ -24,7 +24,7 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 h4 {
@@ -596,6 +596,11 @@ section#topics div.container div.quickLinks a div.links div.text .eight {
 
 section#topics div.container div.quickLinks a div.links div.text p {
   margin: 0;
+  color: #8c8c8c;
+}
+
+section#topics div.container div.quickLinks a div.link6 {
+  margin-left: 0.8rem;
 }
 
 section#topics div.container:nth-of-type(2) {
@@ -655,7 +660,7 @@ section#topics div.container:nth-of-type(2) div.topPics div.pics article .layerC
   position: absolute;
   width: 30%;
   height: 30px;
-  bottom: 177px;
+  bottom: 173px;
   left: 30px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -967,7 +972,7 @@ section#testimonials .container div.topPics div.pics article .layerColor {
   position: absolute;
   width: 30%;
   height: 30px;
-  bottom: 177px;
+  bottom: 173px;
   left: 30px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -1210,7 +1215,7 @@ section#news .container div.newsPics div.pics article .layerColor {
   position: absolute;
   width: 22.283%;
   height: 30px;
-  bottom: 206px;
+  bottom: 197px;
   left: 43px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -1231,7 +1236,6 @@ section#news .container div.newsPics div.pics article .layerColor p {
 
 section#news .container div.newsPics div.pics article .layerColor1 {
   background-color: var(--blue);
-  bottom: 201px;
 }
 
 section#news .container div.newsPics div.pics article .layerColor2 {
