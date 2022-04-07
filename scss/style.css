@@ -1065,7 +1065,7 @@ section#news .container div.topPics .pics article div.layerColor2 {
   background-color: var(--orange);
 }
 
-section#news .container div.topPics .pics article p {
+section#news .container div.topPics .pics article p.blackLighten {
   color: #999999;
 }
 
