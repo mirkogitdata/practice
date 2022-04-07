@@ -473,7 +473,7 @@ section#topics div.container div.quickLinks {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 section#topics div.container div.quickLinks a {
@@ -947,7 +947,7 @@ section#partners {
   overflow: hidden;
 }
 
-section#partners div.highLight {
+section#partners div.blueGrd {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -973,17 +973,17 @@ section#partners div.highLight {
   -o-border-radius: 15px;
 }
 
-section#partners div.highLight div.contentRight {
+section#partners div.blueGrd div.contentRight {
   width: 50%;
   padding-left: 30px;
 }
 
-section#partners div.highLight div.contentRight h2 {
+section#partners div.blueGrd div.contentRight h2 {
   width: 90%;
   margin-top: -2rem;
 }
 
-section#partners div.highLight div.contentRight .headingh3 {
+section#partners div.blueGrd div.contentRight .headingh3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -994,24 +994,24 @@ section#partners div.highLight div.contentRight .headingh3 {
   margin-bottom: 1rem;
 }
 
-section#partners div.highLight div.contentRight .headingh3 img {
+section#partners div.blueGrd div.contentRight .headingh3 img {
   width: 29px;
 }
 
-section#partners div.highLight div.contentRight .headingh3 h3 {
+section#partners div.blueGrd div.contentRight .headingh3 h3 {
   margin-left: 1rem;
 }
 
-section#partners div.highLight div.contentRight p {
+section#partners div.blueGrd div.contentRight p {
   width: 86%;
 }
 
-section#partners div.highLight div.contentRight p:nth-of-type(2) {
+section#partners div.blueGrd div.contentRight p:nth-of-type(2) {
   margin-bottom: 30px;
   width: 88%;
 }
 
-section#partners div.highLight div.contentRight a.btn-white {
+section#partners div.blueGrd div.contentRight a.btn-white {
   width: 140px;
   height: 40px;
   font-size: 1em;
@@ -1037,11 +1037,11 @@ section#partners div.highLight div.contentRight a.btn-white {
   padding: 0.66rem 1.5rem;
 }
 
-section#partners div.highLight div.contentRight a.btn-white:hover {
+section#partners div.blueGrd div.contentRight a.btn-white:hover {
   background-color: var(--orange);
 }
 
-section#partners div.highLight div.contentRight a.btn-white:hover {
+section#partners div.blueGrd div.contentRight a.btn-white:hover {
   color: var(--white);
 }
 
