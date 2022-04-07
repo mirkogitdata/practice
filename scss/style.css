@@ -656,7 +656,7 @@ div.topPics div.pics article .layerColor {
   position: absolute;
   width: 30%;
   height: 30px;
-  bottom: 173px;
+  bottom: 156px;
   left: 30px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -696,7 +696,7 @@ div.topPics div.pics article .layerColor4 {
 }
 
 div.topPics div.pics article h3 {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 div.topPics div.pics article p {
@@ -914,24 +914,24 @@ section#testimonials .container div.topPics .layerColor4 {
   background-color: var(--orange);
 }
 
-section#testimonials .container div.topPics .one {
+section#testimonials .container div.topPics a {
+  opacity: 0.3;
+}
+
+.one {
   color: var(--blue);
 }
 
-section#testimonials .container div.topPics .two {
+.two {
   color: var(--pink);
 }
 
-section#testimonials .container div.topPics .three {
+.three {
   color: var(--blue-dark);
 }
 
-section#testimonials .container div.topPics .four {
+.four {
   color: var(--orange);
-}
-
-section#testimonials .container div.topPics a {
-  opacity: 0.3;
 }
 
 section#partners {
@@ -1052,118 +1052,17 @@ section#partners img.hero-left {
   left: 50px;
 }
 
-section#news .container div.newsPics .headingh2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 1rem;
-}
-
-section#news .container div.newsPics .headingh2 img {
-  width: 29px;
-}
-
-section#news .container div.newsPics .headingh2 h2 {
-  margin-left: 20px;
-}
-
-section#news .container div.newsPics div.pics {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-section#news .container div.newsPics div.pics article {
-  padding: 1rem;
-  position: relative;
-}
-
-section#news .container div.newsPics div.pics article img {
+section#news .container div.topPics .pics article img.photoNews {
   width: 415px;
 }
 
-section#news .container div.newsPics div.pics article .layerColor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  width: 22.283%;
+section#news .container div.topPics .pics article div.layerColor {
   height: 30px;
-  bottom: 197px;
-  left: 43px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  bottom: 181px;
 }
 
-section#news .container div.newsPics div.pics article .layerColor img {
-  width: 18px;
-  margin-left: 0.6rem;
-}
-
-section#news .container div.newsPics div.pics article .layerColor p {
-  margin-left: 0.6rem;
-  color: var(--white);
-}
-
-section#news .container div.newsPics div.pics article .layerColor1 {
-  background-color: var(--blue);
-}
-
-section#news .container div.newsPics div.pics article .layerColor2 {
+section#news .container div.topPics .pics article div.layerColor2 {
   background-color: var(--orange);
-}
-
-section#news .container div.newsPics div.pics article .layerColor2 img {
-  width: 12px;
-}
-
-section#news .container div.newsPics div.pics article .layerColor3 {
-  background-color: var(--blue-dark);
-}
-
-section#news .container div.newsPics div.pics article h3 {
-  margin-top: 3rem;
-}
-
-section#news .container div.newsPics div.pics article .one {
-  color: var(--blue);
-}
-
-section#news .container div.newsPics div.pics article .two {
-  color: var(--orange);
-}
-
-section#news .container div.newsPics div.pics article .three {
-  color: var(--blue-dark);
-}
-
-section#news .container div.newsPics div.pics article p {
-  font-style: italic;
-}
-
-section#news .container div.newsPics div.pics article a:link, section#news .container div.newsPics div.pics article a:visited {
-  color: var(--black);
-  font-weight: 600;
-  opacity: 0.7;
 }
 
 section#testSkills {

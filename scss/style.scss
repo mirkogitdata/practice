@@ -323,7 +323,7 @@ div.topPics {
         position: absolute;
         width: 30%;
         height: 30px;
-        bottom: 173px;
+        bottom: 156px;
         left: 30px;
         border-radius: 5px;
         -webkit-border-radius: 5px;
@@ -347,7 +347,7 @@ div.topPics {
         background-color: var(--violet-dark);
       }
       h3 {
-        margin-top: 3rem;
+        margin-top: 2rem;
       }
       p{
         font-style: italic;
@@ -467,24 +467,26 @@ section#testimonials {
       .layerColor4 {
         background-color: var(--orange);
       }
-      .one {
-          color: var(--blue);
-      }
-      .two {
-          color: var(--pink);
-      }
-      .three {
-          color: var(--blue-dark)
-      }
-      .four {
-           color: var(--orange);
-      }
+      
       a {
           opacity: 0.3;
       }
     }
   }
-} 
+}
+//=== h3 ===
+.one {
+  color: var(--blue);
+}
+.two {
+  color: var(--pink);
+}
+.three {
+  color: var(--blue-dark)
+}
+.four {
+   color: var(--orange);
+}
 //======= PARTNERS ======
 section#partners {
     div.highLight { 
@@ -541,81 +543,22 @@ section#partners {
 //======= NEWS ======
 section#news {
   .container {
-    div.newsPics {
-      .headingh2 {
-       @include h2;
-      }
-      div.pics {
-        display: flex;
-        flex-flow: row;
-        justify-content: center;
-        align-items: center;
+    div.topPics {
+      .pics {
         article {
-          padding: 1rem;
-          position: relative;
-          img {
-            width: 415px;
-          }
-          .layerColor {
-            img {
-              width: 18px;
-              margin-left: 0.6rem;
-            }
-            p {
-               margin-left: 0.6rem;
-               color: var(--white);
-            }
-            display: flex;
-            align-items: center;
-            position: absolute;
-            width: 22.283%;
-            height: 30px;
-            bottom: 197px;
-            left: 43px;
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            -ms-border-radius: 5px;
-            -o-border-radius: 5px;
-          }
-          .layerColor1 {
-            background-color: var(--blue);
-          }
-          .layerColor2 {
-            background-color: var(--orange);
-            img {
-              width: 12px;
-            }
-          }
-          .layerColor3 {
-            background-color: var(--blue-dark);
-          }
-          h3 {
-            margin-top: 3rem;
-          }
-          .one {
-            color: var(--blue);
-          }
-          .two {
-            color: var(--orange);
-          }
-          .three {
-            color: var(--blue-dark)
-          }
-          p{
-            font-style: italic;
-          }
-          a {
-            &:link,
-            &:visited {
-              color: var(--black);
-              font-weight: 600;
-              opacity: 0.7;
-            }
-          }
+         img.photoNews {
+           width: 415px;
+         }
+         div.layerColor {
+          height: 30px;
+          bottom: 181px;
+         }
+         div.layerColor2 {
+           background-color: var(--orange);
+         }
         }
       }
-    } //end topics
+    }
   }
 }
 //======= TRAINING ======
