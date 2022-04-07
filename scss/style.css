@@ -810,11 +810,30 @@ section#sponsored div.pedroMiranda .alfaCover {
   -o-border-radius: 15px;
 }
 
-section#sponsored div.pedroMiranda .alfaCover div.highLight {
+section#sponsored div.sponsored {
+  width: 87px;
+  height: 30px;
+  text-align: center;
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  opacity: 0.4;
+}
+
+section#sponsored div.sponsored p {
+  background-color: var(--white);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+div.highLight {
   padding: 120px;
 }
 
-section#sponsored div.pedroMiranda .alfaCover div.highLight .headingh2 {
+div.highLight .headingh2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -825,33 +844,33 @@ section#sponsored div.pedroMiranda .alfaCover div.highLight .headingh2 {
   margin-bottom: 0;
 }
 
-section#sponsored div.pedroMiranda .alfaCover div.highLight .headingh2 img {
+div.highLight .headingh2 img {
   width: 29px;
 }
 
-section#sponsored div.pedroMiranda .alfaCover div.highLight .headingh2 h2 {
+div.highLight .headingh2 h2 {
   margin-left: 20px;
 }
 
-section#sponsored div.pedroMiranda .alfaCover div.highLight .headingh2 h2 {
+div.highLight .headingh2 h2 {
   color: var(--white);
   margin-top: 0;
 }
 
-section#sponsored div.pedroMiranda .alfaCover div.highLight .headingh2 img {
+div.highLight .headingh2 img {
   width: 38px;
 }
 
-section#sponsored div.pedroMiranda .alfaCover div.highLight p {
+div.highLight p {
   color: var(--white);
   width: 570px;
 }
 
-section#sponsored div.pedroMiranda .alfaCover div.highLight p:nth-of-type(2) {
+div.highLight p:nth-of-type(2) {
   margin-bottom: 2.5rem;
 }
 
-section#sponsored div.pedroMiranda .alfaCover div.highLight a.btn-white {
+div.highLight a.btn-white {
   width: 140px;
   height: 40px;
   font-size: 1em;
@@ -877,31 +896,12 @@ section#sponsored div.pedroMiranda .alfaCover div.highLight a.btn-white {
   padding: 0.66rem 1.5rem;
 }
 
-section#sponsored div.pedroMiranda .alfaCover div.highLight a.btn-white:hover {
+div.highLight a.btn-white:hover {
   background-color: var(--orange);
 }
 
-section#sponsored div.pedroMiranda .alfaCover div.highLight a.btn-white:hover {
+div.highLight a.btn-white:hover {
   color: var(--white);
-}
-
-section#sponsored div.sponsored {
-  width: 87px;
-  height: 30px;
-  text-align: center;
-  position: absolute;
-  top: 80px;
-  right: 30px;
-  opacity: 0.4;
-}
-
-section#sponsored div.sponsored p {
-  background-color: var(--white);
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
 
 section#testimonials {
@@ -1065,6 +1065,10 @@ section#news .container div.topPics .pics article div.layerColor2 {
   background-color: var(--orange);
 }
 
+section#news .container div.topPics .pics article p {
+  color: #999999;
+}
+
 section#testSkills {
   background-color: var(--gray);
   width: 100vw;
@@ -1074,36 +1078,18 @@ section#testSkills .container div.testSkills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 section#testSkills .container div.testSkills div.highLight {
+  padding: 0px;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  margin-right: 150px;
-}
-
-section#testSkills .container div.testSkills div.highLight .headingh2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 1rem;
-}
-
-section#testSkills .container div.testSkills div.highLight .headingh2 img {
-  width: 29px;
-}
-
-section#testSkills .container div.testSkills div.highLight .headingh2 h2 {
-  margin-left: 20px;
 }
 
 section#testSkills .container div.testSkills div.highLight .headingh2 h2 {
@@ -1112,11 +1098,6 @@ section#testSkills .container div.testSkills div.highLight .headingh2 h2 {
 
 section#testSkills .container div.testSkills div.highLight p {
   color: #999999;
-  width: 570px;
-}
-
-section#testSkills .container div.testSkills div.highLight p:nth-of-type(2) {
-  margin-bottom: 2.5rem;
 }
 
 section#testSkills .container div.testSkills div.highLight a.btn-white {
@@ -1140,7 +1121,6 @@ section#testSkills .container div.testSkills div.highLight a.btn-white {
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
   -o-transition: all ease-in 0.4s;
-  padding: 0.66rem 2rem;
 }
 
 section#testSkills .container div.testSkills div.highLight a.btn-white:hover {
@@ -1148,7 +1128,7 @@ section#testSkills .container div.testSkills div.highLight a.btn-white:hover {
 }
 
 section#testSkills .container div.testSkills div.highLight a.btn-white:hover {
-  color: var(--black);
+  color: var(--violet-dark);
 }
 
 section#testSkills .container div.testSkills div.videoTest {
@@ -1158,7 +1138,7 @@ section#testSkills .container div.testSkills div.videoTest {
 }
 
 section#testSkills .container div.testSkills div.videoTest img {
-  width: 590px;
+  width: 660px;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
