@@ -631,8 +631,9 @@ div.topPics div.pics article {
   position: relative;
 }
 
-div.topPics div.pics article img {
+div.topPics div.pics article img.articleImage {
   width: 300px;
+  height: 280px;
 }
 
 div.topPics div.pics article .layerColor {
@@ -643,9 +644,9 @@ div.topPics div.pics article .layerColor {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  width: 30%;
+  width: 125px;
   height: 30px;
-  bottom: 156px;
+  bottom: 181px;
   left: 30px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -695,6 +696,10 @@ div.topPics div.pics article p {
 div.topPics div.pics article a:link, div.topPics div.pics article a:visited {
   color: var(--black);
   font-weight: 600;
+}
+
+div.topPics div.pics article h3, div.topPics div.pics article p, div.topPics div.pics article a {
+  padding-left: 20px;
 }
 
 section#initiatives {
@@ -865,11 +870,22 @@ section#testimonials {
   margin-bottom: 80px;
 }
 
-section#testimonials .container div.topPics .layerColor4 {
+section#testimonials .container div.topPics div.pics {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section#testimonials .container div.topPics div.pics .layerColor3,
+section#testimonials .container div.topPics div.pics .layerColor4 {
+  bottom: 156px;
+}
+
+section#testimonials .container div.topPics div.pics .layerColor4 {
   background-color: var(--orange);
 }
 
-section#testimonials .container div.topPics a {
+section#testimonials .container div.topPics div.pics a {
   opacity: 0.3;
 }
 
@@ -973,20 +989,15 @@ section#partners img.hero-left {
   left: 50px;
 }
 
-section#news .container div.topPics .pics article img.photoNews {
+section#news .container div.topPics div.pics article img.photoNews {
   width: 415px;
 }
 
-section#news .container div.topPics .pics article div.layerColor {
-  height: 30px;
-  bottom: 181px;
-}
-
-section#news .container div.topPics .pics article div.layerColor2 {
+section#news .container div.topPics div.pics article div.layerColor2 {
   background-color: var(--orange);
 }
 
-section#news .container div.topPics .pics article p.blackLighten {
+section#news .container div.topPics div.pics article p.blackLighten {
   color: #999999;
 }
 

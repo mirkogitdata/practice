@@ -302,8 +302,9 @@ div.topPics {
     article {
       padding: 1rem;
       position: relative;
-      img {
+      img.articleImage {
         width: 300px;
+        height: 280px;
       }
       .layerColor {
         img {
@@ -317,9 +318,9 @@ div.topPics {
         display: flex;
         align-items: center;
         position: absolute;
-        width: 30%;
+        width: 125px;
         height: 30px;
-        bottom: 156px;
+        bottom: 181px;
         left: 30px;
         border-radius: 5px;
         -webkit-border-radius: 5px;
@@ -354,6 +355,9 @@ div.topPics {
           color: var(--black);
           font-weight: 600;
         }
+      }
+      h3, p , a {
+        padding-left: 20px;
       }
     }
   }
@@ -452,12 +456,18 @@ section#testimonials {
   margin-bottom: 80px;
   .container {
     div.topPics {
-      .layerColor4 {
-        background-color: var(--orange);
-      }
-      
-      a {
-          opacity: 0.3;
+      div.pics {
+        align-items: flex-start;
+        .layerColor3,
+        .layerColor4 {
+          bottom: 156px;
+        }
+        .layerColor4 {
+          background-color: var(--orange);
+        }
+        a {
+            opacity: 0.3;
+        }
       }
     }
   }
@@ -523,14 +533,10 @@ section#partners {
 section#news {
   .container {
     div.topPics {
-      .pics {
+      div.pics {
         article {
          img.photoNews {
            width: 415px;
-         }
-         div.layerColor {
-          height: 30px;
-          bottom: 181px;
          }
          div.layerColor2 {
            background-color: var(--orange);
