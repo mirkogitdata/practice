@@ -1,6 +1,5 @@
-@mixin button {
-  width: 140px;
-  height: 40px;
+.btnViolet {
+  padding: 0.66rem 2rem;
   font-size: 1em;
   letter-spacing: 1px;
   font-weight: 600;
@@ -21,31 +20,18 @@
   -o-transition: all ease-in 0.4s;
   &:hover {
     background-color: var(--orange);
+    color: var(--white);
+  }
+}
+.btnWhite {
+    background-color: var(--white);
+    color: var(--violet-dark);
+}
+.btnBorder {
+  border: 2px solid var(--white);
+  background-color: rgba(#fff, 0.0);
+  &:hover {
+    color: var(--violet-dark);
   }
 }
 
-@mixin button2 {
-  width: 140px;
-  height: 40px;
-  font-size: 1em;
-  letter-spacing: 1px;
-  font-weight: bold;
-  text-align: center;
-  color: var(--white);
-  border: 2px solid var(--white);
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-  cursor: pointer;
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all ease-in 0.4s;
-  &:hover {
-    background-color: var(--orange);
-    color: var(--black);
-  }
-}

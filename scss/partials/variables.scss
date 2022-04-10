@@ -24,7 +24,8 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  width: 50%;
+  width: 799px;
+  height: 60px;
   padding: 0.3rem 0.3rem 0.3rem 1.2rem;
   background-color: var(--white);
   border-radius: 100px;
@@ -54,13 +55,10 @@
     span {
        @include vertical-line;
        height: 25px;
-     
     }
   }
-  button.btn-violet {
-    @include button;
-    height: 50px;
-    width: 190px;
+  button.btnViolet {
+      height: 52px;
   }
 }
 

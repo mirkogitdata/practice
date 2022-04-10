@@ -72,6 +72,47 @@ img {
   vertical-align: bottom;
 }
 
+.btnViolet {
+  padding: 0.66rem 2rem;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-align: center;
+  background-color: var(--violet-dark);
+  color: var(--white);
+  border: none;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all ease-in 0.4s;
+}
+
+.btnViolet:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.btnWhite {
+  background-color: var(--white);
+  color: var(--violet-dark);
+}
+
+.btnBorder {
+  border: 2px solid var(--white);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.btnBorder:hover {
+  color: var(--violet-dark);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -216,33 +257,6 @@ header div.login {
   -o-border-radius: 100px;
 }
 
-header div.login button.btn-violet {
-  width: 140px;
-  height: 40px;
-  font-size: 1em;
-  letter-spacing: 1px;
-  font-weight: 600;
-  text-align: center;
-  background-color: var(--violet-dark);
-  color: var(--white);
-  border: none;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-  cursor: pointer;
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all ease-in 0.4s;
-}
-
-header div.login button.btn-violet:hover {
-  background-color: var(--orange);
-}
-
 header div.login p {
   margin: 0 1.5rem;
 }
@@ -348,7 +362,8 @@ section#hero div.gradient div.searchBox {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 50%;
+  width: 799px;
+  height: 60px;
   padding: 0.3rem 0.3rem 0.3rem 1.2rem;
   background-color: var(--white);
   border-radius: 100px;
@@ -356,7 +371,6 @@ section#hero div.gradient div.searchBox {
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
-  height: 60px;
 }
 
 section#hero div.gradient div.searchBox .searchTopic, section#hero div.gradient div.searchBox .searchProject {
@@ -397,33 +411,8 @@ section#hero div.gradient div.searchBox div.line span {
   height: 25px;
 }
 
-section#hero div.gradient div.searchBox button.btn-violet {
-  width: 140px;
-  height: 40px;
-  font-size: 1em;
-  letter-spacing: 1px;
-  font-weight: 600;
-  text-align: center;
-  background-color: var(--violet-dark);
-  color: var(--white);
-  border: none;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-  cursor: pointer;
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all ease-in 0.4s;
-  height: 50px;
-  width: 190px;
-}
-
-section#hero div.gradient div.searchBox button.btn-violet:hover {
-  background-color: var(--orange);
+section#hero div.gradient div.searchBox button.btnViolet {
+  height: 52px;
 }
 
 section#hero div.gradient img.hero-left {
@@ -797,7 +786,7 @@ section#sponsored div.pedroMiranda {
   -o-border-radius: 15px;
 }
 
-section#sponsored div.pedroMiranda .alfaCover {
+section#sponsored div.pedroMiranda .blueGradient {
   width: 1300px;
   height: 568px;
   background-image: -webkit-gradient(linear, left top, right top, from(#56bdfd), to(rgba(86, 189, 253, 0.3)));
@@ -868,40 +857,6 @@ div.highLight p {
 
 div.highLight p:nth-of-type(2) {
   margin-bottom: 2.5rem;
-}
-
-div.highLight a.btn-white {
-  width: 140px;
-  height: 40px;
-  font-size: 1em;
-  letter-spacing: 1px;
-  font-weight: 600;
-  text-align: center;
-  background-color: var(--violet-dark);
-  color: var(--white);
-  border: none;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-  cursor: pointer;
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all ease-in 0.4s;
-  background-color: var(--white);
-  color: var(--black);
-  padding: 0.66rem 1.5rem;
-}
-
-div.highLight a.btn-white:hover {
-  background-color: var(--orange);
-}
-
-div.highLight a.btn-white:hover {
-  color: var(--white);
 }
 
 section#testimonials {
@@ -1011,40 +966,6 @@ section#partners div.blueGrd div.contentRight p:nth-of-type(2) {
   width: 88%;
 }
 
-section#partners div.blueGrd div.contentRight a.btn-white {
-  width: 140px;
-  height: 40px;
-  font-size: 1em;
-  letter-spacing: 1px;
-  font-weight: 600;
-  text-align: center;
-  background-color: var(--violet-dark);
-  color: var(--white);
-  border: none;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-  cursor: pointer;
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all ease-in 0.4s;
-  background-color: var(--white);
-  color: var(--black);
-  padding: 0.66rem 1.5rem;
-}
-
-section#partners div.blueGrd div.contentRight a.btn-white:hover {
-  background-color: var(--orange);
-}
-
-section#partners div.blueGrd div.contentRight a.btn-white:hover {
-  color: var(--white);
-}
-
 section#partners img.hero-left {
   width: 350px;
   position: relative;
@@ -1098,37 +1019,6 @@ section#testSkills .container div.testSkills div.highLight .headingh2 h2 {
 
 section#testSkills .container div.testSkills div.highLight p {
   color: #999999;
-}
-
-section#testSkills .container div.testSkills div.highLight a.btn-white {
-  width: 140px;
-  height: 40px;
-  font-size: 1em;
-  letter-spacing: 1px;
-  font-weight: 600;
-  text-align: center;
-  background-color: var(--violet-dark);
-  color: var(--white);
-  border: none;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-  cursor: pointer;
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all ease-in 0.4s;
-}
-
-section#testSkills .container div.testSkills div.highLight a.btn-white:hover {
-  background-color: var(--orange);
-}
-
-section#testSkills .container div.testSkills div.highLight a.btn-white:hover {
-  color: var(--violet-dark);
 }
 
 section#testSkills .container div.testSkills div.videoTest {
@@ -1201,34 +1091,6 @@ section#team div.teamText .headingh2 h2 {
 section#team div.teamText p.askTeam {
   font-size: 29px;
   margin-bottom: 4rem;
-}
-
-section#team div.teamText a.btn2 {
-  width: 140px;
-  height: 40px;
-  font-size: 1em;
-  letter-spacing: 1px;
-  font-weight: bold;
-  text-align: center;
-  color: var(--white);
-  border: 2px solid var(--white);
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-  cursor: pointer;
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all ease-in 0.4s;
-  padding: 0.66rem 2rem;
-}
-
-section#team div.teamText a.btn2:hover {
-  background-color: var(--orange);
-  color: var(--black);
 }
 
 #footer {
