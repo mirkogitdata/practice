@@ -30,6 +30,7 @@ a {
     text-decoration: none;
   }
 }
+
 //======= HEADER ======
 header {
   width: 100%;
@@ -139,10 +140,10 @@ div.dropdown {
   }
   }
 }
+
 //======= HERO ======
 section#hero {
  @include hero;
-  //background-image: linear-gradient(#ebaa3f, #f68523);
   div.gradient {
     display: flex;
     flex-direction: column;
@@ -179,6 +180,7 @@ section#hero {
     }
   }
 }
+
 //======= TOPICS ======
 section#topics {
   div.container {
@@ -289,7 +291,7 @@ section#topics {
   }
 }
 
-//======= #4 TOPICS & TESTIMONIALS ARTICLES ======
+//======= #4 TOPICS & TESTIMONIALS & NEWS ARTICLES ======
 div.topPics {
   .headingh2 {
      @include h2;
@@ -367,6 +369,7 @@ div.topPics {
     }
   }
 }
+
 //======= INIIATIVES ======
 section#initiatives {
   .container {
@@ -410,6 +413,7 @@ section#initiatives {
   width: 100%;
   background-color: var(--violet-dark);
 }
+
 //======= SPONSORED ======
  section#sponsored {
   div.pedroMiranda {
@@ -432,7 +436,7 @@ section#initiatives {
    position: relative;
   padding: 80px 0rem;
 }
-
+//highLight
 div.highLight {
   .headingh2 {
     @include h2;
@@ -454,6 +458,7 @@ div.highLight {
    }
    padding: 120px;
  }
+
 //======= TEWSTIMONIALS ======
 section#testimonials {
   background-color: var(--gray);
@@ -490,6 +495,7 @@ section#testimonials {
 .four {
    color: var(--orange);
 }
+
 //======= PARTNERS ======
 section#partners {
     div.blueGrd {
@@ -534,6 +540,7 @@ section#partners {
     @include pedroMiranda2;
   overflow: hidden;
 }
+
 //======= NEWS ======
 section#news {
   .container {
@@ -554,6 +561,7 @@ section#news {
     }
   }
 }
+
 //======= TRAINING ======
 section#testSkills {
   background-color: var(--gray);
@@ -603,6 +611,7 @@ section#testSkills {
     }
   }
 }
+
 //======= TEAM ======
 section#team {
   div.teamText {
@@ -622,11 +631,12 @@ section#team {
      -moz-transform: translate(-50%, -50%);
      -ms-transform: translate(-50%, -50%);
      -o-transform: translate(-50%, -50%);
-}
+  }
    @include team;
    color: var(--white);
    position: relative;
 }
+
 //======= FOOTER ======
 #footer {
   width: 100vw;
