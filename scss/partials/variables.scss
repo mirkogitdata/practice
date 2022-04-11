@@ -1,3 +1,51 @@
+#menu-toggle {
+  width: 55px;
+  height: 55px;
+  background: var(--violet-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+#menu-toggle:hover .bar {
+  width: 25px;
+}
+#menu-toggle.closeMenu .bar {
+  width: 25px;
+}
+#menu-toggle.closeMenu .bar:first-child {
+  -webkit-transform: translateY(7px) rotate(45deg);
+          transform: translateY(7px) rotate(45deg);
+}
+#menu-toggle.closeMenu .bar:nth-child(2) {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+#menu-toggle.closeMenu .bar:last-child {
+  -webkit-transform: translateY(-7px) rotate(-45deg);
+          transform: translateY(-7px) rotate(-45deg);
+}
+
+.bar {
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+.bar:nth-child(2) {
+  width: 20px;
+  margin: 5px 0;
+}
+.bar:last-child {
+  width: 15px;
+}
+
 @mixin logo {
   a {
     p {
