@@ -146,7 +146,7 @@
 }
 
 @mixin perdoMiranda1 {
-  width: 1300px;
+  //width: 1300px;
   height: 568px;
   background: url("../src/pedro-miranda1.jpg");
   background-position:  50% 50%;
@@ -159,7 +159,6 @@
   -o-border-radius: 15px;
 }
 @mixin pedroMiranda2 {
-  width: 1300px;
   height: 679px;
   background: url("../src/pedro-miranda2.jpg")  center/cover;
   background-repeat: no-repeat;

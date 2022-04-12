@@ -174,6 +174,67 @@ img {
   color: var(--violet-dark);
 }
 
+@media only screen and (max-width: 1400px) {
+  div.container {
+    width: 1080px;
+    padding: 60px 0;
+  }
+  h2 {
+    font-size: 34px;
+  }
+  a.nav-link {
+    padding: 0 1rem;
+  }
+  section#hero div.gradient h1 {
+    font-size: 48px;
+  }
+  section#topics div.container div.topPics div.pics article img.articleImage,
+  section#testimonials div.container div.topPics div.pics article img.articleImage {
+    width: 245px;
+    height: 235px;
+  }
+  section#topics div.container div.topPics div.pics article .layerColor3,
+  section#topics div.container div.topPics div.pics article .layerColor4,
+  section#testimonials div.container div.topPics div.pics article .layerColor3,
+  section#testimonials div.container div.topPics div.pics article .layerColor4 {
+    bottom: 181px;
+  }
+  section#initiatives div.container div.imageContent article img {
+    width: 338px;
+  }
+  section#sponsored {
+    width: 100%;
+  }
+  section#sponsored div.sponsored {
+    position: absolute;
+    top: 80px;
+    left: 1100px;
+  }
+  section#partners {
+    width: 100%;
+  }
+  section#newspaper div.container div.topPics div.pics {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor1 {
+    bottom: 204px;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor2 {
+    bottom: 228px;
+  }
+  section#testSkills div.container div.testSkills div.highLight {
+    padding-right: 3rem;
+  }
+  section#testSkills div.container div.testSkills div.videoTest img {
+    width: 460px;
+  }
+  footer#footer div.container div.rectangle:nth-of-type(2) {
+    margin: 0 40px 0 0;
+  }
+}
+
 @media only screen and (max-width: 995px) {
   #header {
     margin: 0;
@@ -609,7 +670,7 @@ section#hero div.gradient img.hero-left {
   left: 50px;
 }
 
-section#hero div.gradient img.hero-rigth {
+section#hero div.gradient img.hero-right {
   width: 270px;
   position: absolute;
   top: 134px;
@@ -966,11 +1027,9 @@ section#initiatives .container .imageContent article a:link, section#initiatives
 
 section#sponsored {
   position: relative;
-  padding: 80px 0rem;
 }
 
-section#sponsored div.pedroMiranda {
-  width: 1300px;
+section#sponsored div.container div.pedroMiranda {
   height: 568px;
   background: url("../src/pedro-miranda1.jpg");
   background-position: 50% 50%;
@@ -983,8 +1042,7 @@ section#sponsored div.pedroMiranda {
   -o-border-radius: 15px;
 }
 
-section#sponsored div.pedroMiranda .blueGradient {
-  width: 1300px;
+section#sponsored div.container div.pedroMiranda div.blueGradient {
   height: 568px;
   background-image: -webkit-gradient(linear, left top, right top, from(#56bdfd), to(rgba(86, 189, 253, 0.3)));
   background-image: linear-gradient(90deg, #56bdfd, rgba(86, 189, 253, 0.3));
@@ -1097,8 +1155,11 @@ section#testimonials .container div.topPics div.pics a {
   color: var(--orange);
 }
 
-section#partners {
-  width: 1300px;
+section#partners div.container {
+  padding: 0;
+}
+
+section#partners div.container div.partnersImage {
   height: 679px;
   background: url("../src/pedro-miranda2.jpg") center/cover;
   background-repeat: no-repeat;
@@ -1107,10 +1168,9 @@ section#partners {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
-  overflow: hidden;
 }
 
-section#partners div.blueGrd {
+section#partners div.container div.partnersImage div.blueGrd {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1124,7 +1184,6 @@ section#partners div.blueGrd {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 1300px;
   height: 679px;
   color: var(--white);
   background-image: -webkit-gradient(linear, right top, left top, from(#56bdfd), to(rgba(86, 189, 253, 0.2)));
@@ -1134,19 +1193,20 @@ section#partners div.blueGrd {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  position: relative;
 }
 
-section#partners div.blueGrd div.contentRight {
+section#partners div.container div.partnersImage div.blueGrd div.contentRight {
   width: 50%;
   padding-left: 30px;
 }
 
-section#partners div.blueGrd div.contentRight h2 {
+section#partners div.container div.partnersImage div.blueGrd div.contentRight h2 {
   width: 90%;
   margin-top: -2rem;
 }
 
-section#partners div.blueGrd div.contentRight .headingh3 {
+section#partners div.container div.partnersImage div.blueGrd div.contentRight .headingh3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1157,39 +1217,41 @@ section#partners div.blueGrd div.contentRight .headingh3 {
   margin-bottom: 1rem;
 }
 
-section#partners div.blueGrd div.contentRight .headingh3 img {
+section#partners div.container div.partnersImage div.blueGrd div.contentRight .headingh3 img {
   width: 29px;
 }
 
-section#partners div.blueGrd div.contentRight .headingh3 h3 {
+section#partners div.container div.partnersImage div.blueGrd div.contentRight .headingh3 h3 {
   margin-left: 1rem;
 }
 
-section#partners div.blueGrd div.contentRight p {
+section#partners div.container div.partnersImage div.blueGrd div.contentRight p {
   width: 86%;
 }
 
-section#partners div.blueGrd div.contentRight p:nth-of-type(2) {
+section#partners div.container div.partnersImage div.blueGrd div.contentRight p:nth-of-type(2) {
   margin-bottom: 30px;
   width: 88%;
 }
 
-section#partners img.hero-left {
+section#partners div.container div.partnersImage div.blueGrd img.hero-left {
   width: 350px;
-  position: relative;
-  bottom: 375px;
-  left: 50px;
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
 }
 
-section#news .container div.topPics div.pics article img.photoNews {
-  width: 415px;
+section#newspaper div.container div.topPics div.pics article {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33%;
+          flex: 1 1 33%;
 }
 
-section#news .container div.topPics div.pics article div.layerColor2 {
+section#newspaper div.container div.topPics div.pics article div.layerColor2 {
   background-color: var(--orange);
 }
 
-section#news .container div.topPics div.pics article p.blackLighten {
+section#newspaper div.container div.topPics div.pics article p.blackLighten {
   color: #999999;
 }
 

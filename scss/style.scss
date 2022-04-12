@@ -185,7 +185,7 @@ section#hero {
       left: 50px;
       //z-index: 2600;
     }
-    img.hero-rigth {
+    img.hero-right {
       width: 270px;
       position: absolute;
       top: 134px;
@@ -430,25 +430,26 @@ section#initiatives {
 
 //======= SPONSORED ======
  section#sponsored {
-  div.pedroMiranda {
-    .blueGradient {
-       width: 1300px;
-       height: 568px;
-       background-image: linear-gradient(90deg, rgba(86,189, 253, 1.0),rgba(86,189, 253, 0.3));
-       z-index: 2000;
-       border-radius: 15px;
-       -webkit-border-radius: 15px;
-       -moz-border-radius: 15px;
-       -ms-border-radius: 15px;
-       -o-border-radius: 15px;
+   div.container {
+    div.pedroMiranda {
+      div.blueGradient {
+         //width: 1300px;
+         height: 568px;
+         background-image: linear-gradient(90deg, rgba(86,189, 253, 1.0),rgba(86,189, 253, 0.3));
+         z-index: 2000;
+         border-radius: 15px;
+         -webkit-border-radius: 15px;
+         -moz-border-radius: 15px;
+         -ms-border-radius: 15px;
+         -o-border-radius: 15px;
+      }
+      @include perdoMiranda1
     }
-     @include perdoMiranda1;
    }
    div.sponsored {
     @include sponsored;
   }
    position: relative;
-  padding: 80px 0rem;
 }
 //highLight
 div.highLight {
@@ -512,7 +513,9 @@ section#testimonials {
 
 //======= PARTNERS ======
 section#partners {
-    div.blueGrd {
+  div.container {
+    div.partnersImage {
+      div.blueGrd {
         div.contentRight {
           h2 {
              width: 90%;
@@ -531,11 +534,16 @@ section#partners {
           width: 50%;
           padding-left: 30px;
         }
+        img.hero-left {
+          width: 350px;
+          position: absolute;
+          bottom: 60px;
+          left: 60px;
+        }
         display: flex;
         flex-direction: column;
         justify-content: center;
          align-items: flex-end;
-         width: 1300px;
          height: 679px;
          color: var(--white);
          background-image: linear-gradient(270deg, rgba(86,189, 253, 1.0),rgba(86,189, 253, 0.2));
@@ -544,26 +552,22 @@ section#partners {
          -moz-border-radius: 15px;
          -ms-border-radius: 15px;
          -o-border-radius: 15px;
+         position: relative;
+      }
+      @include pedroMiranda2;
     }
-    img.hero-left {
-      width: 350px;
-      position: relative;
-      bottom: 375px;
-      left: 50px;
-    }
-    @include pedroMiranda2;
-  overflow: hidden;
+    padding: 0;
+  }
+  //overflow: hidden;
 }
 
 //======= NEWS ======
-section#news {
-  .container {
+section#newspaper {
+  div.container {
     div.topPics {
       div.pics {
         article {
-         img.photoNews {
-           width: 415px;
-         }
+          flex: 1 1 33%;
          div.layerColor2 {
            background-color: var(--orange);
          }
