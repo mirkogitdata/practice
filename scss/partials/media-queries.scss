@@ -73,8 +73,12 @@ $tiny-screens: 560px;
             .layerColor1 {
               bottom: 204px;
             }
-            .layerColor2 {
-              bottom: 228px;
+            .layerColor2, 
+            .layerColor3 {
+              bottom: 205px;
+            }
+            p.third {
+              width: 70%;
             }
           }
         }

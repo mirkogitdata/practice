@@ -45,8 +45,12 @@
   section#newspaper div.container div.topPics div.pics article .layerColor1 {
     bottom: 204px;
   }
-  section#newspaper div.container div.topPics div.pics article .layerColor2 {
-    bottom: 228px;
+  section#newspaper div.container div.topPics div.pics article .layerColor2,
+  section#newspaper div.container div.topPics div.pics article .layerColor3 {
+    bottom: 205px;
+  }
+  section#newspaper div.container div.topPics div.pics article p.third {
+    width: 70%;
   }
   section#testSkills div.container div.testSkills div.highLight {
     padding-right: 3rem;
