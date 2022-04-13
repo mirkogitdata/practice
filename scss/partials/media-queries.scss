@@ -131,6 +131,13 @@ $tiny-screens: 560px;
         .nav-items {
           a.nav-link {
             padding: 0 0.6rem;
+            &:after {
+              content: "";
+              left: 10px;
+              }
+           &:hover::after {
+             width: calc(100% - 10px);
+           }
           }
         }
       }

@@ -80,6 +80,13 @@
   header#header nav.nav .nav-list .nav-items a.nav-link {
     padding: 0 0.6rem;
   }
+  header#header nav.nav .nav-list .nav-items a.nav-link:after {
+    content: "";
+    left: 10px;
+  }
+  header#header nav.nav .nav-list .nav-items a.nav-link:hover::after {
+    width: calc(100% - 10px);
+  }
   header#header div.login {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
