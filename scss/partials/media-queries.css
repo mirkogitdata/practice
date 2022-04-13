@@ -63,6 +63,130 @@
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  div.container {
+    width: 80%;
+    padding: 60px 0;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  header#header div.logo {
+    margin-right: 1rem;
+  }
+  header#header div.logo a p {
+    font-size: 1.1em;
+  }
+  header#header nav.nav .nav-list .nav-items a.nav-link {
+    padding: 0 0.6rem;
+  }
+  header#header div.login {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+  header#header div.login .btnViolet {
+    border: 2px solid var(--white);
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  header#header div.login p {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    font-size: 1.1em;
+    margin: 0 0 0.5rem 0;
+    color: var(--white);
+  }
+  section#hero div.gradient h1 {
+    font-size: 42px;
+  }
+  section#topics div.container div.quickLinks a div.links div.circle {
+    width: 35px;
+    padding: 10px;
+  }
+  section#topics div.container div.topPics div.pics article,
+  section#testimonials div.container div.topPics div.pics article {
+    /*
+            .layerColor1 {
+              bottom: 229px;
+            }
+           */
+  }
+  section#topics div.container div.topPics div.pics article img.articleImage,
+  section#testimonials div.container div.topPics div.pics article img.articleImage {
+    width: 193px;
+    height: 183px;
+  }
+  section#topics div.container div.topPics div.pics article .layerColor,
+  section#testimonials div.container div.topPics div.pics article .layerColor {
+    bottom: 205px;
+  }
+  .layerColor1 {
+    bottom: 229px;
+  }
+  section#initiatives div.container div.imageContent article img {
+    width: 265px;
+  }
+  section#testimonials div.container div.topPics div.pics article .layerColor1 {
+    bottom: 229px;
+  }
+  section#testSkills div.container div.testSkills {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  section#testSkills div.container div.testSkills div.highLight {
+    padding-right: 3rem;
+  }
+  section#testSkills div.container div.testSkills div.highLight p {
+    width: 100%;
+  }
+  section#testSkills div.container div.testSkills div.videoTest {
+    margin-bottom: 3rem;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor1 {
+    bottom: 227px;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor2 {
+    bottom: 227px;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor3 {
+    bottom: 229px;
+  }
+  section#newspaper div.container div.topPics div.pics article p.two {
+    width: 80%;
+  }
+  footer#footer div.container div.logo {
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
+  }
+  footer#footer div.container div.logo a p {
+    font-size: 1.1em;
+  }
+  footer#footer div.container nav.nav {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  footer#footer div.container div.rectangle {
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
+    -ms-grid-columns: (minmax(100px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+  footer#footer div.container div.rectangle:nth-of-type(2) {
+    margin: 0 25px 0 0;
+  }
+}
+
 @media only screen and (max-width: 995px) {
   #header {
     margin: 0;
@@ -126,27 +250,11 @@
   }
   #header div.login {
     display: none;
-    background-color: rgba(0, 0, 0, 0);
     padding: 0.5rem;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-  }
-  #header div.login .btnViolet {
-    border: 2px solid var(--white);
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
   }
   #header div.login p {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
     font-size: 1.3em;
     margin: 0.5rem 1rem 1rem;
-    color: var(--white);
   }
   #header .login.showMenu {
     display: -webkit-box;

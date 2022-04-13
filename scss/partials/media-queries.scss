@@ -107,7 +107,187 @@ $tiny-screens: 560px;
     }
   }
 }
-
+//========= large-screens =======
+@media only screen and (max-width: $large-screens) {
+  div.container {
+    width: 80%;
+    padding: 60px 0;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  header#header {
+    div.logo {
+      a {
+        p {
+          font-size: 1.1em;
+         
+        }
+      }
+    margin-right: 1rem;
+    }
+    nav.nav {
+      .nav-list {
+        .nav-items {
+          a.nav-link {
+            padding: 0 0.6rem;
+          }
+        }
+      }
+    }
+    div.login {
+      flex-direction: column;
+      .btnViolet {
+        border: 2px solid var(--white);
+        order: 2;
+    }
+    p {
+      order: 1;
+      font-size: 1.1em;
+      margin: 0 0 0.5rem 0;
+      color: var(--white);
+    }
+    background-color: rgba(#000, 0.0);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    }
+  }
+  section#hero {
+    div.gradient {
+      h1 {
+        font-size: 42px;
+      }
+    }
+  }
+  section#topics {
+    div.container {
+      div.quickLinks {
+        a {
+          div.links {
+            div.circle {
+                width: 35px;
+                padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  section#topics, 
+  section#testimonials {
+    div.container {
+      div.topPics {
+        div.pics {
+          article {
+            img.articleImage {
+              width:  193px;
+              height: 183px;
+            }
+            .layerColor {
+              bottom: 205px;
+            }
+            /*
+            .layerColor1 {
+              bottom: 229px;
+            }
+           */
+          }
+        } 
+      }
+    } 
+  }
+  .layerColor1 {
+    bottom: 229px;
+  }
+  section#initiatives {
+    div.container {
+      div.imageContent {
+        article {
+          img {
+            width: 265px;
+          }
+        }
+      }
+    }
+  }
+  section#testimonials {
+    div.container {
+      div.topPics {
+        div.pics {
+          article {
+            .layerColor1 {
+              bottom: 229px;
+            }
+          }
+        } 
+      }
+    } 
+  }
+  section#testSkills {
+    div.container {
+      div.testSkills {
+        align-items: flex-end;
+        div.highLight {
+          padding-right: 3rem;
+          p {
+            width: 100%;
+          }
+        }
+        div.videoTest {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+  section#newspaper {
+    div.container {
+      div.topPics {
+        div.pics {
+          article {
+            .layerColor1 {
+              bottom: 227px;
+            }
+            .layerColor2 {
+              bottom: 227px;
+            }  
+            .layerColor3 {
+              bottom: 229px;
+            }
+            p.two {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer#footer {
+    div.container {
+      div.logo {
+        a {
+          p {
+            font-size: 1.1em;
+           
+          }
+        }
+        flex-basis: 15%;
+      }
+      nav.nav {
+        flex-basis: 30%;
+      }
+      div.rectangle {
+        flex-basis: 15%;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      }
+      div.rectangle:nth-of-type(2) {
+        margin: 0 25px 0 0;
+      }
+    }
+  }
+}
 //========= medium-screens =======
 @media only screen and (max-width: $medium-screens) {
   #header {
@@ -165,24 +345,12 @@ $tiny-screens: 560px;
        }
     }
     div.login {
-      .btnViolet {
-          border: 2px solid var(--white);
-          order: 2;
-      }
       p {
-        order: 1;
         font-size: 1.3em;
         margin: 0.5rem 1rem 1rem;
-        color: var(--white);
       }
       display: none;
-      background-color: rgba(#000, 0.0);
       padding: 0.5rem;
-      border-radius: 15px;
-      -webkit-border-radius: 15px;
-      -moz-border-radius: 15px;
-      -ms-border-radius: 15px;
-      -o-border-radius: 15px;
     }
     .login.showMenu {
       display: flex;
@@ -205,5 +373,3 @@ $tiny-screens: 560px;
    -o-transition: 0.5s cubic-bezier(0.86, 0, 0.07, 1) all;
   }
 }
-
-

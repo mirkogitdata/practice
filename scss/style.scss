@@ -43,7 +43,18 @@ header {
   align-items: center;
   z-index: 2500;
   div.logo {
-    @include logo;
+    //@include logo;
+    a {
+      p {
+        margin: 0;
+        font-size: 1.3em;
+        span.skills {
+          font-weight: bold;
+        }
+      }
+    }
+    z-index: 2000;
+    margin-right: 3rem;
   }
   nav.nav {
      margin-top: 1.5rem;
@@ -144,19 +155,12 @@ div.dropdown {
   }
   }
 }
-/*
-header.navShadow {
-  transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) all;
-  -webkit-transition:;
-  -moz-transition:;
-  -ms-transition:;
-  -o-transition:;
-}
-*/
+
 //======= HERO ======
 section#hero {
  @include hero;
   div.gradient {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,20 +182,31 @@ section#hero {
     div.searchBox {
        @include searchBox;
     }
-    img.hero-left {
-      width: 340px;
-      position: absolute;
-      bottom: -25px;
-      left: 50px;
-      //z-index: 2600;
+    div.shapeLeft {
+        width: 340px;
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
     }
-    img.hero-right {
+    div.shapeRight{
       width: 270px;
       position: absolute;
-      top: 134px;
       right: 50px;
-      //z-index: 2600;
+      top: 132px;
     }
+  }
+  @media only screen and (max-width: 1400px) {
+    div.gradient {
+      div.shapeLeft {
+        width: 290px;
+      }
+      div.shapeRight {
+        width: 220px;
+        top: 130px;
+      }
+      height: 100vh;
+    }
+    height: 100vh;
   }
 }
 
@@ -303,6 +318,63 @@ section#topics {
       }
     }
   }
+  @media only screen and (max-width: 1200px){
+    div.container {
+      div.quickLinks {
+        a {
+           div.links {
+            div.circle {
+                  width: 45px;
+                  padding: 20px;
+            }
+            div.circle1 {
+              padding: 21px 21px;
+              width: 30px;
+              img {
+                width: 25px;
+              }
+            }
+            div.circle3 {
+              padding: 21.5px 20.5px;
+              width: 26px;
+              img {
+                width: 36px;
+              }
+            }
+            div.circle4 {
+              padding: 17.5px 20.5px;
+              width: 26px;
+              img {
+                width: 32px;
+              }
+            }
+            div.circle5 {
+              padding: 18px 20.5px;
+              width: 26px;
+              img {
+                width: 32px;
+              }
+            }
+            div.circle7 {
+              padding: 22.3px 21px;
+              width: 30px;
+              img {
+                width: 25px;
+              }
+            }
+            div.circle6,
+            div.circle8 {
+              padding: 19.5px 20.5px;
+              width: 30px;
+              img {
+                width: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }  
 }
 
 //======= #4 TOPICS & TESTIMONIALS & NEWS ARTICLES ======
@@ -558,7 +630,17 @@ section#partners {
     }
     padding: 0;
   }
-  //overflow: hidden;
+  @media only screen and (max-width: 1400px) {
+    div.container {
+      div.partnersImage {
+        div.blueGrd {
+          img.hero-left {
+            width: 270px;
+          }
+        }
+      }
+    }
+  }
 }
 
 //======= NEWS ======
@@ -639,7 +721,6 @@ section#team {
      p.askTeam {
        font-size: 29px;
        margin-bottom: 4rem;
-  
      }
      position: absolute;
      top: 50%;

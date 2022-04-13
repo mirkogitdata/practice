@@ -146,7 +146,6 @@
 }
 
 @mixin perdoMiranda1 {
-  //width: 1300px;
   height: 568px;
   background: url("../src/pedro-miranda1.jpg");
   background-position:  50% 50%;
@@ -194,4 +193,7 @@
   background-position: 0% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  @media only screen and (max-width: 1200px){
+    background-position: 20% 50%;
+  }
 }

@@ -239,6 +239,130 @@ img {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  div.container {
+    width: 80%;
+    padding: 60px 0;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  header#header div.logo {
+    margin-right: 1rem;
+  }
+  header#header div.logo a p {
+    font-size: 1.1em;
+  }
+  header#header nav.nav .nav-list .nav-items a.nav-link {
+    padding: 0 0.6rem;
+  }
+  header#header div.login {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+  header#header div.login .btnViolet {
+    border: 2px solid var(--white);
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  header#header div.login p {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    font-size: 1.1em;
+    margin: 0 0 0.5rem 0;
+    color: var(--white);
+  }
+  section#hero div.gradient h1 {
+    font-size: 42px;
+  }
+  section#topics div.container div.quickLinks a div.links div.circle {
+    width: 35px;
+    padding: 10px;
+  }
+  section#topics div.container div.topPics div.pics article,
+  section#testimonials div.container div.topPics div.pics article {
+    /*
+            .layerColor1 {
+              bottom: 229px;
+            }
+           */
+  }
+  section#topics div.container div.topPics div.pics article img.articleImage,
+  section#testimonials div.container div.topPics div.pics article img.articleImage {
+    width: 193px;
+    height: 183px;
+  }
+  section#topics div.container div.topPics div.pics article .layerColor,
+  section#testimonials div.container div.topPics div.pics article .layerColor {
+    bottom: 205px;
+  }
+  .layerColor1 {
+    bottom: 229px;
+  }
+  section#initiatives div.container div.imageContent article img {
+    width: 265px;
+  }
+  section#testimonials div.container div.topPics div.pics article .layerColor1 {
+    bottom: 229px;
+  }
+  section#testSkills div.container div.testSkills {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  section#testSkills div.container div.testSkills div.highLight {
+    padding-right: 3rem;
+  }
+  section#testSkills div.container div.testSkills div.highLight p {
+    width: 100%;
+  }
+  section#testSkills div.container div.testSkills div.videoTest {
+    margin-bottom: 3rem;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor1 {
+    bottom: 227px;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor2 {
+    bottom: 227px;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor3 {
+    bottom: 229px;
+  }
+  section#newspaper div.container div.topPics div.pics article p.two {
+    width: 80%;
+  }
+  footer#footer div.container div.logo {
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
+  }
+  footer#footer div.container div.logo a p {
+    font-size: 1.1em;
+  }
+  footer#footer div.container nav.nav {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  footer#footer div.container div.rectangle {
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
+    -ms-grid-columns: (minmax(100px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+  footer#footer div.container div.rectangle:nth-of-type(2) {
+    margin: 0 25px 0 0;
+  }
+}
+
 @media only screen and (max-width: 995px) {
   #header {
     margin: 0;
@@ -302,27 +426,11 @@ img {
   }
   #header div.login {
     display: none;
-    background-color: rgba(0, 0, 0, 0);
     padding: 0.5rem;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-  }
-  #header div.login .btnViolet {
-    border: 2px solid var(--white);
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
   }
   #header div.login p {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
     font-size: 1.3em;
     margin: 0.5rem 1rem 1rem;
-    color: var(--white);
   }
   #header .login.showMenu {
     display: -webkit-box;
@@ -549,15 +657,6 @@ header div.dropdown:hover .dropdown-content {
           flex-direction: column;
 }
 
-/*
-header.navShadow {
-  transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) all;
-  -webkit-transition:;
-  -moz-transition:;
-  -ms-transition:;
-  -o-transition:;
-}
-*/
 section#hero {
   width: 100%;
   height: 820px;
@@ -566,6 +665,7 @@ section#hero {
 }
 
 section#hero div.gradient {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -667,18 +767,34 @@ section#hero div.gradient div.searchBox button.btnViolet {
   height: 52px;
 }
 
-section#hero div.gradient img.hero-left {
+section#hero div.gradient div.shapeLeft {
   width: 340px;
   position: absolute;
-  bottom: -25px;
+  bottom: 50px;
   left: 50px;
 }
 
-section#hero div.gradient img.hero-right {
+section#hero div.gradient div.shapeRight {
   width: 270px;
   position: absolute;
-  top: 134px;
   right: 50px;
+  top: 132px;
+}
+
+@media only screen and (max-width: 1400px) {
+  section#hero {
+    height: 100vh;
+  }
+  section#hero div.gradient {
+    height: 100vh;
+  }
+  section#hero div.gradient div.shapeLeft {
+    width: 290px;
+  }
+  section#hero div.gradient div.shapeRight {
+    width: 220px;
+    top: 130px;
+  }
 }
 
 section#topics div.container .headingh2 {
@@ -842,6 +958,57 @@ section#topics div.container div.quickLinks a div.links div.text p {
 
 section#topics div.container div.quickLinks a div.link6 {
   margin-left: 0.8rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  section#topics div.container div.quickLinks a div.links div.circle {
+    width: 45px;
+    padding: 20px;
+  }
+  section#topics div.container div.quickLinks a div.links div.circle1 {
+    padding: 21px 21px;
+    width: 30px;
+  }
+  section#topics div.container div.quickLinks a div.links div.circle1 img {
+    width: 25px;
+  }
+  section#topics div.container div.quickLinks a div.links div.circle3 {
+    padding: 21.5px 20.5px;
+    width: 26px;
+  }
+  section#topics div.container div.quickLinks a div.links div.circle3 img {
+    width: 36px;
+  }
+  section#topics div.container div.quickLinks a div.links div.circle4 {
+    padding: 17.5px 20.5px;
+    width: 26px;
+  }
+  section#topics div.container div.quickLinks a div.links div.circle4 img {
+    width: 32px;
+  }
+  section#topics div.container div.quickLinks a div.links div.circle5 {
+    padding: 18px 20.5px;
+    width: 26px;
+  }
+  section#topics div.container div.quickLinks a div.links div.circle5 img {
+    width: 32px;
+  }
+  section#topics div.container div.quickLinks a div.links div.circle7 {
+    padding: 22.3px 21px;
+    width: 30px;
+  }
+  section#topics div.container div.quickLinks a div.links div.circle7 img {
+    width: 25px;
+  }
+  section#topics div.container div.quickLinks a div.links div.circle6,
+  section#topics div.container div.quickLinks a div.links div.circle8 {
+    padding: 19.5px 20.5px;
+    width: 30px;
+  }
+  section#topics div.container div.quickLinks a div.links div.circle6 img,
+  section#topics div.container div.quickLinks a div.links div.circle8 img {
+    width: 25px;
+  }
 }
 
 div.topPics .headingh2 {
@@ -1245,6 +1412,12 @@ section#partners div.container div.partnersImage div.blueGrd img.hero-left {
   left: 60px;
 }
 
+@media only screen and (max-width: 1400px) {
+  section#partners div.container div.partnersImage div.blueGrd img.hero-left {
+    width: 270px;
+  }
+}
+
 section#newspaper div.container div.topPics div.pics article {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 33%;
@@ -1360,6 +1533,12 @@ section#team div.teamText .headingh2 h2 {
 section#team div.teamText p.askTeam {
   font-size: 29px;
   margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  section#team {
+    background-position: 20% 50%;
+  }
 }
 
 #footer {

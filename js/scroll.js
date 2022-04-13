@@ -4,8 +4,8 @@ $( () => {
 	$(window).scroll( () => {
    
 	  const windowTop = $(window).scrollTop();
-    const htmlWidth = window.innerWidth;
-    if(htmlWidth > 995) {
+    const windowWidth = window.innerWidth;
+    if(windowWidth > 995) {
     windowTop > 100 ? $('header').addClass('navShadow') : $('header').removeClass('navShadow');
     windowTop > 100 ? $('.nav-link').addClass('navShadow') : $('.nav-link').removeClass('navShadow');
     windowTop > 100 ? $('.logo').addClass('navShadow') : $('.logo').removeClass('navShadow');
@@ -14,11 +14,11 @@ $( () => {
     windowTop > 100 ? $('header').css('transition','0.7s cubic-bezier(0.165, 0.84, 0.44, 1) all') : $('header').css('transition','none');
     windowTop > 100 ? $('.nav-link').css('color','var(--white)') : $('.nav-link').css('color','var(--violet-dark)');
     windowTop > 100 ? $('header .logo a p').css('color','var(--white)') : $('header .logo a p').css('color','var(--violet-dark)');
-    } else if (htmlWidth < 995) {
-      windowTop > 100 ? $('header').css('top','0px') : $('header').css('top','0px');
-    } else {
-      windowTop = 0;
-    }
+    } else if (windowWidth < 995) {
+			windowTop > 100 ? $('header').css('top','0px') : $('header').css('top','0px');
+		} else {
+			windowTop = 0;
+		}
 	});
 	
 	//Click Logo To Scroll To Top
