@@ -1,6 +1,6 @@
 #menu-toggle {
-  width: 55px;
-  height: 55px;
+  width: 51px;
+  height: 51px;
   background: var(--violet-dark);
   display: flex;
   justify-content: center;
@@ -195,5 +195,8 @@
   background-repeat: no-repeat;
   @media only screen and (max-width: 1200px){
     background-position: 20% 50%;
+  }
+  @media only screen and (max-width: 995px) {
+    background-position: 25% 50%;
   }
 }

@@ -120,14 +120,6 @@
     width: 35px;
     padding: 10px;
   }
-  section#topics div.container div.topPics div.pics article,
-  section#testimonials div.container div.topPics div.pics article {
-    /*
-            .layerColor1 {
-              bottom: 229px;
-            }
-           */
-  }
   section#topics div.container div.topPics div.pics article img.articleImage,
   section#testimonials div.container div.topPics div.pics article img.articleImage {
     width: 193px;
@@ -137,14 +129,23 @@
   section#testimonials div.container div.topPics div.pics article .layerColor {
     bottom: 205px;
   }
-  .layerColor1 {
-    bottom: 229px;
-  }
   section#initiatives div.container div.imageContent article img {
     width: 265px;
   }
   section#testimonials div.container div.topPics div.pics article .layerColor1 {
     bottom: 229px;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor1 {
+    bottom: 227px;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor2 {
+    bottom: 227px;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor3 {
+    bottom: 229px;
+  }
+  section#newspaper div.container div.topPics div.pics article p.two {
+    width: 80%;
   }
   section#testSkills div.container div.testSkills {
     -webkit-box-align: end;
@@ -159,18 +160,6 @@
   }
   section#testSkills div.container div.testSkills div.videoTest {
     margin-bottom: 3rem;
-  }
-  section#newspaper div.container div.topPics div.pics article .layerColor1 {
-    bottom: 227px;
-  }
-  section#newspaper div.container div.topPics div.pics article .layerColor2 {
-    bottom: 227px;
-  }
-  section#newspaper div.container div.topPics div.pics article .layerColor3 {
-    bottom: 229px;
-  }
-  section#newspaper div.container div.topPics div.pics article p.two {
-    width: 80%;
   }
   footer#footer div.container div.logo {
     -ms-flex-preferred-size: 15%;
@@ -195,6 +184,13 @@
 }
 
 @media only screen and (max-width: 995px) {
+  div.container {
+    width: 80%;
+    padding: 45px 0;
+  }
+  h2 {
+    font-size: 29px;
+  }
   #header {
     margin: 0;
     -webkit-box-orient: vertical;
@@ -208,11 +204,11 @@
   }
   #header div.logo {
     position: absolute;
-    top: 2.5rem;
+    top: 2rem;
     left: 2rem;
   }
   #header div.logo a p {
-    font-size: 1.1em;
+    font-size: 0.8em;
   }
   #header .logo.showMenu {
     display: block;
@@ -286,6 +282,107 @@
     -moz-transition: 0.5s cubic-bezier(0.86, 0, 0.07, 1) all;
     -ms-transition: 0.5s cubic-bezier(0.86, 0, 0.07, 1) all;
     -o-transition: 0.5s cubic-bezier(0.86, 0, 0.07, 1) all;
+  }
+  section#hero div.gradient h1 {
+    font-size: 38px;
+  }
+  section#hero div.gradient p {
+    width: 70%;
+    text-align: center;
+  }
+  section#topics div.container div.topPics div.pics,
+  section#testimonials div.container div.topPics div.pics {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section#topics div.container div.topPics div.pics article,
+  section#testimonials div.container div.topPics div.pics article {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 1rem 0rem 2rem;
+  }
+  section#topics div.container div.topPics div.pics article .layerColor,
+  section#testimonials div.container div.topPics div.pics article .layerColor {
+    bottom: 173px;
+  }
+  section#initiatives div.container div.imageContent article img {
+    width: 198px;
+  }
+  section#sponsored div.container div.pedroMiranda {
+    height: 100vh;
+  }
+  section#sponsored div.container div.pedroMiranda div.blueGradient {
+    height: 100vh;
+  }
+  section#sponsored div.container div.pedroMiranda div.blueGradient div.highLight {
+    padding: 70px;
+  }
+  section#sponsored div.container div.pedroMiranda div.blueGradient div.highLight p {
+    width: 80%;
+  }
+  section#newspaper div.container div.topPics div.pics {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor2 {
+    bottom: 203px;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor3 {
+    bottom: 158px;
+  }
+  section#newspaper div.container div.topPics div.pics article p.two {
+    width: 80%;
+  }
+  section#testSkills div.container div.testSkills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section#testSkills div.container div.testSkills div.highLight {
+    padding-right: 0;
+  }
+  section#testSkills div.container div.testSkills div.videoTest {
+    margin: 4rem 0rem 0rem;
+  }
+  section#testSkills div.container div.testSkills div.videoTest img {
+    width: 100%;
+  }
+  footer#footer div.container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer#footer div.container div.logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20%;
+            flex: 1 1 20%;
+  }
+  footer#footer div.container div.logo a p {
+    font-size: 0.8em;
+  }
+  footer#footer div.container nav.nav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+    margin-bottom: 3rem;
+  }
+  footer#footer div.container div.rectangle {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
+    -ms-grid-columns: (minmax(310px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
   }
 }
 /*# sourceMappingURL=media-queries.css.map */

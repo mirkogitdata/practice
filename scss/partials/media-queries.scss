@@ -196,18 +196,10 @@ $tiny-screens: 560px;
             .layerColor {
               bottom: 205px;
             }
-            /*
-            .layerColor1 {
-              bottom: 229px;
-            }
-           */
           }
         } 
       }
     } 
-  }
-  .layerColor1 {
-    bottom: 229px;
   }
   section#initiatives {
     div.container {
@@ -233,22 +225,6 @@ $tiny-screens: 560px;
       }
     } 
   }
-  section#testSkills {
-    div.container {
-      div.testSkills {
-        align-items: flex-end;
-        div.highLight {
-          padding-right: 3rem;
-          p {
-            width: 100%;
-          }
-        }
-        div.videoTest {
-          margin-bottom: 3rem;
-        }
-      }
-    }
-  }
   section#newspaper {
     div.container {
       div.topPics {
@@ -267,6 +243,22 @@ $tiny-screens: 560px;
               width: 80%;
             }
           }
+        }
+      }
+    }
+  }
+  section#testSkills {
+    div.container {
+      div.testSkills {
+        align-items: flex-end;
+        div.highLight {
+          padding-right: 3rem;
+          p {
+            width: 100%;
+          }
+        }
+        div.videoTest {
+          margin-bottom: 3rem;
         }
       }
     }
@@ -297,6 +289,13 @@ $tiny-screens: 560px;
 }
 //========= medium-screens =======
 @media only screen and (max-width: $medium-screens) {
+  div.container {
+    width: 80%;
+    padding: 45px 0;
+  }
+  h2 {
+    font-size: 29px;
+  }
   #header {
     margin: 0;
     flex-direction: column;
@@ -304,11 +303,11 @@ $tiny-screens: 560px;
     height: 0;
     div.logo {
       position: absolute;
-      top: 2.5rem;
+      top: 2rem;
       left: 2rem;
       a {
         p {
-          font-size: 1.1em;
+          font-size: 0.8em;
         }
       }
     }
@@ -378,5 +377,121 @@ $tiny-screens: 560px;
    -moz-transition: 0.5s cubic-bezier(0.86, 0, 0.07, 1) all;
    -ms-transition: 0.5s cubic-bezier(0.86, 0, 0.07, 1) all;
    -o-transition: 0.5s cubic-bezier(0.86, 0, 0.07, 1) all;
+  }
+  section#hero {
+    div.gradient {
+      h1 {
+        font-size: 38px;
+      }
+      p {
+        width: 70%;
+        text-align: center;
+      }
+    }
+  }
+  section#topics, 
+  section#testimonials {
+    div.container {
+      div.topPics {
+        div.pics {
+          flex-flow: row wrap;
+          justify-content: space-between;
+          article {
+            flex-basis: 50%;
+            padding: 1rem 0rem 2rem;
+            .layerColor {
+              bottom: 173px;
+            }
+          }
+        } 
+      }
+    } 
+  }
+  section#initiatives {
+    div.container {
+      div.imageContent {
+        article {
+          img {
+            width: 198px;
+          }
+        }
+      }
+    }
+  }
+  section#sponsored {
+    div.container {
+      div.pedroMiranda {
+        div.blueGradient {
+          div.highLight {
+            padding: 70px;
+            p {
+              width: 80%;
+            }
+          }
+          height: 100vh;
+        }
+        height: 100vh;
+      }
+    }
+  }
+  section#newspaper {
+    div.container {
+      div.topPics {
+        div.pics {
+          flex-wrap: wrap;
+          article {
+            .layerColor2 {
+              bottom: 203px;
+            }  
+            .layerColor3 {
+              bottom: 158px;
+            }
+            p.two {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+  section#testSkills {
+    div.container {
+      div.testSkills {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        div.highLight {
+          padding-right: 0;
+        }
+        div.videoTest {
+          img {
+            width: 100%;
+          }
+          margin: 4rem 0rem 0rem;
+        }
+      }
+    }
+  }
+  footer#footer {
+    div.container {
+      flex-wrap: wrap;
+      div.logo {
+        a {
+          p {
+            font-size: 0.8em;
+           
+          }
+        }
+        flex: 1 1 20%;
+      }
+      nav.nav {
+        flex: 1 1 40%;
+        margin-bottom: 3rem;
+      }
+      div.rectangle {
+        flex: 1 1 25%;
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      }
+    }
   }
 }

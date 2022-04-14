@@ -73,8 +73,8 @@ img {
 }
 
 #menu-toggle {
-  width: 55px;
-  height: 55px;
+  width: 51px;
+  height: 51px;
   background: var(--violet-dark);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,14 +296,6 @@ img {
     width: 35px;
     padding: 10px;
   }
-  section#topics div.container div.topPics div.pics article,
-  section#testimonials div.container div.topPics div.pics article {
-    /*
-            .layerColor1 {
-              bottom: 229px;
-            }
-           */
-  }
   section#topics div.container div.topPics div.pics article img.articleImage,
   section#testimonials div.container div.topPics div.pics article img.articleImage {
     width: 193px;
@@ -313,14 +305,23 @@ img {
   section#testimonials div.container div.topPics div.pics article .layerColor {
     bottom: 205px;
   }
-  .layerColor1 {
-    bottom: 229px;
-  }
   section#initiatives div.container div.imageContent article img {
     width: 265px;
   }
   section#testimonials div.container div.topPics div.pics article .layerColor1 {
     bottom: 229px;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor1 {
+    bottom: 227px;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor2 {
+    bottom: 227px;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor3 {
+    bottom: 229px;
+  }
+  section#newspaper div.container div.topPics div.pics article p.two {
+    width: 80%;
   }
   section#testSkills div.container div.testSkills {
     -webkit-box-align: end;
@@ -335,18 +336,6 @@ img {
   }
   section#testSkills div.container div.testSkills div.videoTest {
     margin-bottom: 3rem;
-  }
-  section#newspaper div.container div.topPics div.pics article .layerColor1 {
-    bottom: 227px;
-  }
-  section#newspaper div.container div.topPics div.pics article .layerColor2 {
-    bottom: 227px;
-  }
-  section#newspaper div.container div.topPics div.pics article .layerColor3 {
-    bottom: 229px;
-  }
-  section#newspaper div.container div.topPics div.pics article p.two {
-    width: 80%;
   }
   footer#footer div.container div.logo {
     -ms-flex-preferred-size: 15%;
@@ -371,6 +360,13 @@ img {
 }
 
 @media only screen and (max-width: 995px) {
+  div.container {
+    width: 80%;
+    padding: 45px 0;
+  }
+  h2 {
+    font-size: 29px;
+  }
   #header {
     margin: 0;
     -webkit-box-orient: vertical;
@@ -384,11 +380,11 @@ img {
   }
   #header div.logo {
     position: absolute;
-    top: 2.5rem;
+    top: 2rem;
     left: 2rem;
   }
   #header div.logo a p {
-    font-size: 1.1em;
+    font-size: 0.8em;
   }
   #header .logo.showMenu {
     display: block;
@@ -463,6 +459,107 @@ img {
     -ms-transition: 0.5s cubic-bezier(0.86, 0, 0.07, 1) all;
     -o-transition: 0.5s cubic-bezier(0.86, 0, 0.07, 1) all;
   }
+  section#hero div.gradient h1 {
+    font-size: 38px;
+  }
+  section#hero div.gradient p {
+    width: 70%;
+    text-align: center;
+  }
+  section#topics div.container div.topPics div.pics,
+  section#testimonials div.container div.topPics div.pics {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section#topics div.container div.topPics div.pics article,
+  section#testimonials div.container div.topPics div.pics article {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 1rem 0rem 2rem;
+  }
+  section#topics div.container div.topPics div.pics article .layerColor,
+  section#testimonials div.container div.topPics div.pics article .layerColor {
+    bottom: 173px;
+  }
+  section#initiatives div.container div.imageContent article img {
+    width: 198px;
+  }
+  section#sponsored div.container div.pedroMiranda {
+    height: 100vh;
+  }
+  section#sponsored div.container div.pedroMiranda div.blueGradient {
+    height: 100vh;
+  }
+  section#sponsored div.container div.pedroMiranda div.blueGradient div.highLight {
+    padding: 70px;
+  }
+  section#sponsored div.container div.pedroMiranda div.blueGradient div.highLight p {
+    width: 80%;
+  }
+  section#newspaper div.container div.topPics div.pics {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor2 {
+    bottom: 203px;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor3 {
+    bottom: 158px;
+  }
+  section#newspaper div.container div.topPics div.pics article p.two {
+    width: 80%;
+  }
+  section#testSkills div.container div.testSkills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section#testSkills div.container div.testSkills div.highLight {
+    padding-right: 0;
+  }
+  section#testSkills div.container div.testSkills div.videoTest {
+    margin: 4rem 0rem 0rem;
+  }
+  section#testSkills div.container div.testSkills div.videoTest img {
+    width: 100%;
+  }
+  footer#footer div.container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer#footer div.container div.logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20%;
+            flex: 1 1 20%;
+  }
+  footer#footer div.container div.logo a p {
+    font-size: 0.8em;
+  }
+  footer#footer div.container nav.nav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+    margin-bottom: 3rem;
+  }
+  footer#footer div.container div.rectangle {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
+    -ms-grid-columns: (minmax(310px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  }
 }
 
 body {
@@ -519,7 +616,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 2500;
+  z-index: 500;
 }
 
 header div.logo {
@@ -804,6 +901,28 @@ section#hero div.gradient div.shapeRight {
   }
 }
 
+@media only screen and (max-width: 995px) {
+  section#hero div.gradient div.shapeLeft {
+    width: 240px;
+  }
+  section#hero div.gradient div.searchBox {
+    width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section#hero div.gradient div.searchBox div.searchTopic, section#hero div.gradient div.searchBox .searchProject {
+    width: 170px;
+  }
+  section#hero div.gradient div.searchBox div.searchTopic input[type="text"]:focus, section#hero div.gradient div.searchBox .searchProject input[type="text"]:focus {
+    width: 120px;
+  }
+  section#hero div.gradient div.shapeRight {
+    width: 170px;
+    top: 145px;
+  }
+}
+
 section#topics div.container .headingh2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -829,8 +948,8 @@ section#topics div.container div.quickLinks {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -979,6 +1098,13 @@ section#topics div.container div.quickLinks a div.link6 {
   section#topics div.container div.quickLinks a div.links div.circle1 img {
     width: 25px;
   }
+  section#topics div.container div.quickLinks a div.links div.circle2 {
+    padding: 21.3px 21px;
+    width: 30px;
+  }
+  section#topics div.container div.quickLinks a div.links div.circle2 img {
+    width: 25px;
+  }
   section#topics div.container div.quickLinks a div.links div.circle3 {
     padding: 21.5px 20.5px;
     width: 26px;
@@ -1015,6 +1141,30 @@ section#topics div.container div.quickLinks a div.link6 {
   section#topics div.container div.quickLinks a div.links div.circle6 img,
   section#topics div.container div.quickLinks a div.links div.circle8 img {
     width: 25px;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  section#topics div.container div.quickLinks {
+    margin-bottom: 0rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section#topics div.container div.quickLinks a {
+    -ms-flex-preferred-size: 36%;
+        flex-basis: 36%;
+  }
+  section#topics div.container div.quickLinks a div.links {
+    margin: 0;
+    padding: 0 0 2rem 0;
+  }
+  section#topics div.container div.quickLinks2 {
+    margin-bottom: 2rem;
   }
 }
 
@@ -1425,6 +1575,29 @@ section#partners div.container div.partnersImage div.blueGrd img.hero-left {
   }
 }
 
+@media only screen and (max-width: 995px) {
+  section#partners div.container div.partnersImage {
+    height: 820px;
+  }
+  section#partners div.container div.partnersImage div.blueGrd {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 820px;
+  }
+  section#partners div.container div.partnersImage div.blueGrd div.contentRight {
+    width: 90%;
+    padding-left: 70px;
+    margin-top: 6rem;
+  }
+  section#partners div.container div.partnersImage div.blueGrd img.hero-left {
+    width: 190px;
+  }
+}
+
 section#newspaper div.container div.topPics div.pics article {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 33%;
@@ -1545,6 +1718,12 @@ section#team div.teamText p.askTeam {
 @media only screen and (max-width: 1200px) {
   section#team {
     background-position: 20% 50%;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  section#team {
+    background-position: 25% 50%;
   }
 }
 
