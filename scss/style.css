@@ -1808,6 +1808,10 @@ section#team div.teamText p.askTeam {
   margin: 0;
 }
 
+#footer div.container nav.nav .nav-list .nav-items:nth-of-type(1) {
+  margin: 0px 0px 10px;
+}
+
 #footer div.container div.rectangle {
   background-color: var(--violet-dark);
   -ms-flex-preferred-size: 20%;
