@@ -562,6 +562,186 @@ img {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  div.container {
+    width: 80%;
+    padding: 40px 0;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  #header {
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header div.logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+  #header div.logo a p {
+    font-size: 0.8em;
+  }
+  #header .logo.showMenu {
+    display: block;
+  }
+  #header .logo.showMenu a p {
+    color: var(--white);
+  }
+  #header nav.nav #menu-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 27000;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    overflow: hidden;
+  }
+  #header nav.nav .nav-list {
+    display: none;
+  }
+  #header nav.nav .nav-list .nav-items a {
+    padding: 0 4rem 0rem 0rem;
+  }
+  #header nav.nav .nav-list .nav-items a:link, #header nav.nav .nav-list .nav-items a:visited {
+    color: var(--white);
+    font-size: 1.5em;
+  }
+  #header nav.nav .nav-list .nav-items a:after {
+    width: 0;
+    height: 0;
+  }
+  #header nav.nav .nav-list.showMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #header div.login {
+    display: none;
+    padding: 0.5rem;
+  }
+  #header div.login p {
+    font-size: 1.3em;
+    margin: 0.5rem 1rem 1rem;
+  }
+  #header .login.showMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #header div.line {
+    display: none;
+  }
+  #header .dropdown {
+    display: none;
+  }
+  section#topics div.container div.topPics div.pics,
+  section#testimonials div.container div.topPics div.pics {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section#topics div.container div.topPics div.pics article img.articleImage,
+  section#testimonials div.container div.topPics div.pics article img.articleImage {
+    width: 100%;
+    height: 100%;
+  }
+  section#initiatives div.container div.imageContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section#initiatives div.container div.imageContent article {
+    padding: 2rem 0;
+  }
+  section#initiatives div.container div.imageContent article img {
+    width: 106%;
+  }
+  section#testimonials div.container div.topPics div.pics article .layerColor1 {
+    bottom: 173px;
+  }
+  section#testimonials div.container div.topPics div.pics article .layerColor3,
+  section#testimonials div.container div.topPics div.pics article .layerColor4 {
+    bottom: 172px;
+  }
+  section#newspaper div.container div.topPics div.pics {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#newspaper div.container div.topPics div.pics article {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    padding: 1.5rem 1rem;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor2 {
+    bottom: 164px;
+  }
+  section#newspaper div.container div.topPics div.pics article .layerColor1,
+  section#newspaper div.container div.topPics div.pics article .layerColor3 {
+    bottom: 189px;
+  }
+  footer#footer div.container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer#footer div.container div.logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 10%;
+            flex: 1 1 10%;
+  }
+  footer#footer div.container nav.nav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+  }
+  footer#footer div.container div.rectangle {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    margin-top: 4rem;
+    -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+  footer#footer div.container div.rectangle div.item {
+    height: 70px;
+    background-color: var(--gray-a);
+  }
+  footer#footer div.container div.rectangle:nth-of-type(2) {
+    margin: 0;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -923,6 +1103,59 @@ section#hero div.gradient div.shapeRight {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  section#hero div.gradient h1 {
+    font-size: 34px;
+    margin-top: 3rem;
+  }
+  section#hero div.gradient div.shapeLeft {
+    width: 170px;
+  }
+  section#hero div.gradient div.searchBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 3rem;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+  section#hero div.gradient div.searchBox div.searchTopic, section#hero div.gradient div.searchBox div.searchProject {
+    width: 270px;
+  }
+  section#hero div.gradient div.searchBox div.searchTopic input[type="text"], section#hero div.gradient div.searchBox div.searchProject input[type="text"] {
+    margin-top: 1.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+  section#hero div.gradient div.searchBox div.searchTopic input[type="text"]:focus, section#hero div.gradient div.searchBox div.searchProject input[type="text"]:focus {
+    width: 270px;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+  }
+  section#hero div.gradient div.searchBox .fa-solid {
+    margin-top: 1.5rem;
+  }
+  section#hero div.gradient div.searchBox div.line span {
+    display: none;
+  }
+  section#hero div.gradient div.searchBox button.btnViolet {
+    width: 219px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  section#hero div.gradient p.underSearchBox {
+    margin-top: 5rem;
+  }
+}
+
 section#topics div.container .headingh2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1165,6 +1398,13 @@ section#topics div.container div.quickLinks a div.link6 {
   }
   section#topics div.container div.quickLinks2 {
     margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section#topics div.container div.quickLinks a {
+    -ms-flex-preferred-size: 46%;
+        flex-basis: 46%;
   }
 }
 
@@ -1598,6 +1838,12 @@ section#partners div.container div.partnersImage div.blueGrd img.hero-left {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  section#partners div.container div.partnersImage div.blueGrd img.hero-left {
+    width: 170px;
+  }
+}
+
 section#newspaper div.container div.topPics div.pics article {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 33%;
@@ -1724,6 +1970,21 @@ section#team div.teamText p.askTeam {
 @media only screen and (max-width: 995px) {
   section#team {
     background-position: 25% 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section#team div.teamText {
+    left: 56%;
+  }
+  section#team div.teamText a {
+    border: 2px solid var(--violet-dark);
+    color: var(--violet-dark);
+    background-color: rgba(255, 255, 255, 0);
+  }
+  section#team div.teamText a:hover {
+    background-color: var(--violet-dark);
+    color: var(--white);
   }
 }
 

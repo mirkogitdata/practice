@@ -495,3 +495,178 @@ $tiny-screens: 560px;
     }
   }
 }
+//========= small-screens =======
+@media only screen and (max-width: $small-screens) {
+  div.container {
+    width: 80%;
+    padding: 40px 0;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  #header {
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    div.logo {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      a {
+        p {
+          font-size: 0.8em;
+        }
+      }
+    }
+    .logo.showMenu {
+      display: block;
+      a {
+        p {
+          color: var(--white);
+        }
+      }
+    }
+    nav.nav {
+      #menu-toggle {
+        display: flex;
+        z-index: 27000;
+        position: absolute;
+        top: 2rem;
+       right: 2rem;
+       overflow: hidden;
+      }
+       .nav-list {
+         display: none;
+         .nav-items {
+           a {
+             padding: 0 4rem 0rem 0rem;
+             &:link,
+             &:visited {
+               color: var(--white);
+               font-size: 1.5em;
+             }
+           }
+           a:after {
+             width: 0;
+             height: 0;
+           }
+         }
+       }
+       .nav-list.showMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+       }
+    }
+    div.login {
+      p {
+        font-size: 1.3em;
+        margin: 0.5rem 1rem 1rem;
+      }
+      display: none;
+      padding: 0.5rem;
+    }
+    .login.showMenu {
+      display: flex;
+      flex-direction: column;
+    }
+    div.line {
+      display: none;
+    }
+    .dropdown {
+      display: none;
+    }
+  }
+  section#topics, 
+  section#testimonials {
+    div.container {
+      div.topPics {
+        div.pics {
+          flex-flow: column nowrap;
+          justify-content: center;
+          article {
+            img.articleImage {
+              width:  100%;
+              height: 100%;
+            }
+          }
+        } 
+      }
+    } 
+  }
+  section#initiatives {
+    div.container {
+      div.imageContent {
+        flex-direction: column;
+        align-items: flex-start;
+        article {
+          padding: 2rem 0;
+          img {
+            width: 106%;
+          }
+        }
+      }
+    }
+  }
+  section#testimonials {
+    div.container {
+      div.topPics {
+        div.pics {
+          article {
+            .layerColor1 {
+              bottom: 173px;
+            }
+            .layerColor3,
+            .layerColor4 {
+              bottom: 172px;
+            }
+          }
+        } 
+      }
+    } 
+  }
+  section#newspaper {
+    div.container {
+      div.topPics {
+        div.pics {
+          flex-wrap: wrap;
+          flex-direction: column;
+          article {
+            flex: 1 1 100%;
+            padding: 1.5rem 1rem;
+            .layerColor2 {
+              bottom: 164px;
+            }  
+            .layerColor1,
+            .layerColor3 {
+              bottom: 189px;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer#footer {
+    div.container {
+      flex-wrap: wrap;
+      div.logo {
+        flex: 1 1 10%;
+      }
+      nav.nav {
+        flex: 1 1 40%;
+      }
+      div.rectangle {
+        flex: 1 1 50%;
+        margin-top: 4rem;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        div.item {
+          height: 70px;
+           background-color: var(--gray-a);
+         }
+      }
+      div.rectangle:nth-of-type(2) {
+        margin: 0;
+      }
+    }
+  }
+}

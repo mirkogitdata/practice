@@ -231,6 +231,59 @@ section#hero {
       }
     }
   }
+  @media only screen and (max-width: 768px) {
+    div.gradient {
+      h1 {
+        font-size: 34px;
+        margin-top: 3rem;
+      } 
+      div.shapeLeft {
+        width: 170px;
+      }
+      div.searchBox {
+        div.searchTopic, div.searchProject {
+          width: 270px;
+          input[type="text"] {
+            &:focus {
+              width: 270px;
+              padding: 0.5rem 0.5rem 0.5rem 1rem;
+            }
+            margin-top: 1.5rem;
+            padding: 0.5rem 0.5rem 0.5rem 1rem;
+            border-radius: 15px;        ;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+          }
+        }
+        .fa-solid {
+          margin-top: 1.5rem;
+        }
+        div.line {
+          span {
+            display: none;
+          }
+        }
+        button.btnViolet {
+          width: 219px;
+          margin-top: 2rem;
+          margin-left: 1rem;
+        }
+         flex-direction: column;
+         background-color: rgba(#fff, 0.0);
+         margin-top: 3rem;
+         border-radius: 15px;
+         -webkit-border-radius: 15px;
+         -moz-border-radius: 15px;
+         -ms-border-radius: 15px;
+         -o-border-radius: 15px;
+      }
+      p.underSearchBox {
+        margin-top: 5rem;
+      }
+    }
+  }
 }
 
 //======= TOPICS ======
@@ -423,7 +476,16 @@ section#topics {
         margin-bottom: 2rem;
       }
     }
-  }  
+  }
+  @media only screen and (max-width: 768px) {
+    div.container {
+      div.quickLinks {
+        a {
+          flex-basis: 46%;
+        }
+      }
+    }
+  } 
 }
 
 //======= #4 TOPICS & TESTIMONIALS & NEWS ARTICLES ======
@@ -709,6 +771,18 @@ section#partners {
       }
     }
   }
+  @media only screen and (max-width: 768px) {
+    div.container {
+      div.partnersImage {
+        div.blueGrd {
+          img.hero-left {
+            width: 170px;
+          }
+
+        }
+      }
+    }
+  }
 }
 
 //======= NEWS ======
@@ -802,6 +876,20 @@ section#team {
    @include team;
    color: var(--white);
    position: relative;
+   @media only screen and (max-width: 768px) {
+    div.teamText {
+      left: 56%;
+      a {
+        border: 2px solid var(--violet-dark);
+        color: var(--violet-dark);
+        background-color: rgba(#fff, 0.0);
+        &:hover {
+          background-color: var(--violet-dark);
+          color: var(--white);
+        }
+      }
+    }
+   }
 }
 
 //======= FOOTER ======
