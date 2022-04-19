@@ -7,8 +7,10 @@ $( () => {
 		$('.nav-list').toggleClass('showMenu');
     $('.login').toggleClass('showMenu');
     $('.logo').toggleClass('showMenu');
+		$('.lang-menu').toggleClass('showMenu');
 		
 		$('li').on('click', () => {
+			$('.lang-menu').removeClass('showMenu');
       $('.logo').removeClass('showMenu');
       $('.login').removeClass('showMenu');
       $('.nav-list').removeClass('showMenu');

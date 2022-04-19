@@ -312,7 +312,7 @@ $tiny-screens: 560px;
       left: 2rem;
       a {
         p {
-          font-size: 0.8em;
+          font-size: 1.1em;
         }
       }
     }
@@ -370,9 +370,24 @@ $tiny-screens: 560px;
     div.line {
       display: none;
     }
-    .dropdown {
+    .lang-menu {
       display: none;
     }
+    .lang-menu.showMenu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 2rem;
+      div.dropbtn {
+        color: var(--white);
+      }
+      ul {
+        top: 25px;
+        right: 0px;
+      }
+    } 
   }
   #header.showMenu {
    height: 100vh;
@@ -497,6 +512,11 @@ $tiny-screens: 560px;
     div.logo {
       top: 25px;
       left: 25px;
+      a {
+        p {
+          font-size: 0.9em;
+        }
+      }
     }
     nav.nav {
       #menu-toggle {

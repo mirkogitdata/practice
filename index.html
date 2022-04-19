@@ -54,16 +54,24 @@
       <div class="line">
          <span></span>
       </div>
-      <div class="dropdown">
-        <button class="state">EN
-          <i class="fa-solid fa-angle-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+      <div class="lang-menu">
+        <div onclick="langMenu()" class="dropbtn">
+           EN
+           <i class="fa-solid fa-angle-down"></i>
         </div>
-      </div> 		
+        <ul id="dropDown" class="dropdown-content">
+            <li>
+                <a href="" class="be">BE</a>
+            </li>
+            <li>
+                <a href="#" class="nl">NL</a>
+            </li>
+            <li>
+                <a href="" class="de">DE</a>
+            </li>
+           
+        </ul>
+    </div>	
     </header> <!-- END HEADER -->
     <!-- HERO -->
     <section id="hero">
@@ -509,6 +517,8 @@
        </div> <!-- end .linksFt -->
      </div> <!-- end .container -->
   </footer> <!-- end #footer -->
+  
   <script src="./js/menu-toggle.js"></script>
+  <script src="./js/lang-menu.js"></script>
   <script src="./js/scroll.js"></script>
 </html>

@@ -388,7 +388,7 @@ img {
     left: 2rem;
   }
   header#header div.logo a p {
-    font-size: 0.8em;
+    font-size: 1.1em;
   }
   header#header .logo.showMenu {
     display: block;
@@ -451,8 +451,32 @@ img {
   header#header div.line {
     display: none;
   }
-  header#header .dropdown {
+  header#header .lang-menu {
     display: none;
+  }
+  header#header .lang-menu.showMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  header#header .lang-menu.showMenu div.dropbtn {
+    color: var(--white);
+  }
+  header#header .lang-menu.showMenu ul {
+    top: 25px;
+    right: 0px;
   }
   #header.showMenu {
     height: 100vh;
@@ -565,6 +589,9 @@ img {
   header#header div.logo {
     top: 25px;
     left: 25px;
+  }
+  header#header div.logo a p {
+    font-size: 0.9em;
   }
   header#header nav.nav #menu-toggle {
     width: 40px;
@@ -927,49 +954,103 @@ header div.login p {
   margin: 0 1.5rem;
 }
 
-header div.dropdown {
-  background-color: none;
+header .lang-menu {
+  width: 100px;
+  text-align: right;
+  position: relative;
 }
 
-header div.dropdown button.state {
-  border: none;
-}
-
-header div.dropdown button.state i {
-  font-size: 1em;
-}
-
-header div.dropdown div.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--violet-dark);
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  margin: 1rem 0 0 0.4rem;
-  min-width: 160px;
-  z-index: 1;
-}
-
-header div.dropdown div.dropdown-content a {
-  color: var(--white);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-header div.dropdown div.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-header div.dropdown:hover .dropdown-content {
+header .lang-menu div.dropbtn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+header .lang-menu div.dropbtn i {
+  margin-left: 0.3rem;
+}
+
+header .lang-menu ul {
+  margin: 0;
+  padding: 0;
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 41px;
+  right: 30px;
+  width: 100px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+header .lang-menu ul li {
+  list-style: none;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .lang-menu ul li a {
+  text-decoration: none;
+  width: 100px;
+  padding: 5px 10px;
+  display: block;
+  font-weight: 700;
+  color: var(--violet-dark);
+}
+
+header .lang-menu ul li a:before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+header .lang-menu ul li a:hover {
+  background-color: var(--violet-dark);
+  color: var(--white);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+header .lang-menu ul li a.de:before {
+  background-image: url(https://flagcdn.com/16x12/de.png);
+}
+
+header .lang-menu ul li a.nl:before {
+  background-image: url(https://flagcdn.com/16x12/nl.png);
+}
+
+header .lang-menu ul li a.be:before {
+  background-image: url(https://flagcdn.com/16x12/be.png);
+}
+
+header .lang-menu .show {
+  display: block;
 }
 
 section#hero {
