@@ -2274,12 +2274,12 @@ section#team div.teamText p.askTeam {
   color: var(--white);
 }
 
-#footer div.container nav.nav {
+#footer div.container nav.navbar {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
 }
 
-#footer div.container nav.nav .nav-list {
+#footer div.container nav.navbar .nav-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -2293,11 +2293,11 @@ section#team div.teamText p.askTeam {
   font-weight: 600;
 }
 
-#footer div.container nav.nav .nav-list .nav-items {
+#footer div.container nav.navbar .nav-list .nav-items {
   margin: 10px 0rem;
 }
 
-#footer div.container nav.nav .nav-list .nav-items a {
+#footer div.container nav.navbar .nav-list .nav-items a {
   color: var(--white);
   padding: 0 2rem;
   transition: all ease-in 0.2s;
@@ -2307,15 +2307,15 @@ section#team div.teamText p.askTeam {
   -o-transition: all ease-in 0.2s;
 }
 
-#footer div.container nav.nav .nav-list .nav-items a:hover {
+#footer div.container nav.navbar .nav-list .nav-items a:hover {
   color: var(--orange);
 }
 
-#footer div.container nav.nav .nav-list .nav-items a a.last-link {
+#footer div.container nav.navbar .nav-list .nav-items a a.last-link {
   margin: 0;
 }
 
-#footer div.container nav.nav .nav-list .nav-items:nth-of-type(1) {
+#footer div.container nav.navbar .nav-list .nav-items:nth-of-type(1) {
   margin: 0px 0px 10px;
 }
 

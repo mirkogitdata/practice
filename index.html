@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>LibraFire_Test</title>
-    <link href="./scss/style.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome init -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>		
+    <!-- CSS Libraries -->
+    <link href="./css/animate.min.css" rel="stylesheet">	
+    <link href="./scss/style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- HEADER -->
     <header id="header">
       <div class="logo">
@@ -460,7 +462,7 @@
           <p>BELGIUM.be</p>
         </a>
       </div> <!-- end .logo -->
-      <nav class="nav">
+      <nav class="nav navbar">
         <ul class="nav-list">
           <li class="nav-items">
             <a href="" class="nav-link">Menu</a>
@@ -482,7 +484,7 @@
           </li>
         </ul>
       </nav> <!-- end .nav -->
-      <nav class="nav">
+      <nav class="nav navbar">
         <ul class="nav-list">
           <li class="nav-items">
             <a href="" class="nav-link">Andere links</a>
@@ -517,8 +519,10 @@
        </div> <!-- end .linksFt -->
      </div> <!-- end .container -->
   </footer> <!-- end #footer -->
-  
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./js/wow.min.js"></script>
   <script src="./js/menu-toggle.js"></script>
   <script src="./js/lang-menu.js"></script>
-  <script src="./js/scroll.js"></script>
+  <script src="./js/main.js"></script>
 </html>

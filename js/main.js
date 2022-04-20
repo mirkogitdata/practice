@@ -20,6 +20,9 @@ $( () => {
 			windowTop = 0;
 		}
 	});
+
+	// Initiate the wowjs
+	new WOW().init();
 	
 	//Click Logo To Scroll To Top
 	$('.logo').on('click', () => {
